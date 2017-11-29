@@ -21,32 +21,6 @@
  * THE SOFTWARE.
  */
 
-import XCTest
-import FunctionalSwift
-
-class FunctionalSwiftTests: XCTestCase {
-    
-    func testEitherOperationForTheEitherWithLeftElement() {
-        let bar: Either<String, Int> = .left("foo")
-        let foo = bar.either({ "left \($0)" },
-                             { "right \($0)" })
-        let expected = "left foo"
-        XCTAssertEqual(foo, expected)
-    }
-
-    func testEitherOperationForTheEitherWithRightElement() {
-        let bar: Either<String, Int> = .right(10)
-        let foo = bar.either({ "left \($0)" },
-                             { "right \($0)" })
-        let expected = "right 10"
-        XCTAssertEqual(foo, expected)
-    }
-
-    func testIdentity() {
-        let a = 5
-        let b = "Test"
-
-        XCTAssertEqual(a, id(a))
-        XCTAssertEqual(b, id(b))
-    }
+public func id<T>(_ identity: T) -> T {
+    return identity
 }
