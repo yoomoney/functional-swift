@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		244F728C75B4B6F9B9E001ED /* Optional+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7C5E89AFFBCBB76A464F /* Optional+Functional.swift */; };
+		244F72B229BE70E63A73BA27 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F70D98D9B9CADEE97FB88 /* Result.swift */; };
+		244F732ADB2A1B8D98EE6AA5 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7EED18E791AD0F7B5E62 /* Monoid.swift */; };
+		244F74697B562DB6682D1480 /* Collection+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F708F18BEB3C1F57314AE /* Collection+Split.swift */; };
+		244F7496FD7D3D84226E9B5D /* FunctionalSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 244F7A424EA6976DA024BA2B /* FunctionalSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244F74E1584343CC6D7D6729 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F74B21881F5049D82BE96 /* Operators.swift */; };
+		244F75F2789BC45B16596E3D /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7DBAA85412252B1A54CD /* Either.swift */; };
+		244F7662B616D5BAC8932A28 /* Dictionary+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7C77AF6E00F4F19BCEC2 /* Dictionary+Functional.swift */; };
+		244F779A11916D5E1B017FA5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F74B21881F5049D82BE96 /* Operators.swift */; };
+		244F77EB5737BC52CF4880F7 /* Dictionary+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7C77AF6E00F4F19BCEC2 /* Dictionary+Functional.swift */; };
+		244F77FE1F7468DE541C9554 /* Dictionary+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7C77AF6E00F4F19BCEC2 /* Dictionary+Functional.swift */; };
+		244F78BE7B04347AAFF1D33E /* Array+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7E136ECC332C77733736 /* Array+Functional.swift */; };
+		244F7947F6A0BC5395430038 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7EED18E791AD0F7B5E62 /* Monoid.swift */; };
+		244F7A45E121772B39229BEE /* Collection+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F708F18BEB3C1F57314AE /* Collection+Split.swift */; };
+		244F7B92F55DE554F61DAB63 /* Collection+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F708F18BEB3C1F57314AE /* Collection+Split.swift */; };
+		244F7C08EA6FBC70A504364B /* Array+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7E136ECC332C77733736 /* Array+Functional.swift */; };
+		244F7C59738B999070DD8F2D /* Array+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7E136ECC332C77733736 /* Array+Functional.swift */; };
+		244F7D105EAD4A1A271260D9 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7EED18E791AD0F7B5E62 /* Monoid.swift */; };
+		244F7D26B24B0C3E216C266B /* Optional+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7C5E89AFFBCBB76A464F /* Optional+Functional.swift */; };
+		244F7D4F9FDF09AF0067A343 /* Optional+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7C5E89AFFBCBB76A464F /* Optional+Functional.swift */; };
+		244F7FE74CC7363E5F904E42 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F74B21881F5049D82BE96 /* Operators.swift */; };
+		E04EB1021F5567B700D08B5D /* FunctionalSwift-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E04EB1001F5567B700D08B5D /* FunctionalSwift-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E04EB10F1F5567F600D08B5D /* FunctionalSwift-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E04EB10D1F5567F600D08B5D /* FunctionalSwift-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E04EB1131F5568CF00D08B5D /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7DBAA85412252B1A54CD /* Either.swift */; };
+		E04EB1141F5568CF00D08B5D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F70D98D9B9CADEE97FB88 /* Result.swift */; };
+		E04EB1151F5568CF00D08B5D /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7DBAA85412252B1A54CD /* Either.swift */; };
+		E04EB1161F5568CF00D08B5D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F70D98D9B9CADEE97FB88 /* Result.swift */; };
+		E064759C1FCED8DF002BF3FB /* FunctionalSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04EB10B1F5567F600D08B5D /* FunctionalSwift.framework */; };
+		E06475A21FCED8F3002BF3FB /* FunctionalSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7CEB593B325BD3ECDF37 /* FunctionalSwiftTests.swift */; };
+		E06475A31FCED8F3002BF3FB /* CollectionSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F72484354DE9341140658 /* CollectionSplitTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E064759D1FCED8DF002BF3FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 244F74C250A0D56072696FA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E04EB10A1F5567F600D08B5D;
+			remoteInfo = "FunctionalSwift-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E06475A41FCED90B002BF3FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		244F708F18BEB3C1F57314AE /* Collection+Split.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Split.swift"; sourceTree = "<group>"; };
+		244F70D98D9B9CADEE97FB88 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		244F70FEB6DACD805FF97447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		244F72484354DE9341140658 /* CollectionSplitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionSplitTests.swift; sourceTree = "<group>"; };
+		244F74B21881F5049D82BE96 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		244F7A424EA6976DA024BA2B /* FunctionalSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionalSwift.h; sourceTree = "<group>"; };
+		244F7C5E89AFFBCBB76A464F /* Optional+Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Functional.swift"; sourceTree = "<group>"; };
+		244F7C77AF6E00F4F19BCEC2 /* Dictionary+Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Functional.swift"; sourceTree = "<group>"; };
+		244F7CEB593B325BD3ECDF37 /* FunctionalSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalSwiftTests.swift; sourceTree = "<group>"; };
+		244F7CEBB41CD9150B330A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		244F7D715EF25836D511378B /* FunctionalSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunctionalSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		244F7DBAA85412252B1A54CD /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		244F7E136ECC332C77733736 /* Array+Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Functional.swift"; sourceTree = "<group>"; };
+		244F7EED18E791AD0F7B5E62 /* Monoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monoid.swift; path = Types/Monoid.swift; sourceTree = "<group>"; };
+		E04EB0FE1F5567B700D08B5D /* FunctionalSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunctionalSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04EB1001F5567B700D08B5D /* FunctionalSwift-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunctionalSwift-watchOS.h"; sourceTree = "<group>"; };
+		E04EB1011F5567B700D08B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04EB10B1F5567F600D08B5D /* FunctionalSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunctionalSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04EB10D1F5567F600D08B5D /* FunctionalSwift-macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunctionalSwift-macOS.h"; sourceTree = "<group>"; };
+		E04EB10E1F5567F600D08B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06475971FCED8DF002BF3FB /* FunctionalSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunctionalSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		244F752F9AB6097D2E1E918A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EB0FA1F5567B700D08B5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EB1071F5567F600D08B5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06475941FCED8DF002BF3FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E064759C1FCED8DF002BF3FB /* FunctionalSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		244F76CB36DBCA994B7A661D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				244F7D715EF25836D511378B /* FunctionalSwift.framework */,
+				E04EB0FE1F5567B700D08B5D /* FunctionalSwift.framework */,
+				E04EB10B1F5567F600D08B5D /* FunctionalSwift.framework */,
+				E06475971FCED8DF002BF3FB /* FunctionalSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		244F78F77D2652D283F53DF3 = {
+			isa = PBXGroup;
+			children = (
+				E04EB0FF1F5567B700D08B5D /* FunctionalSwift-watchOS */,
+				E04EB10C1F5567F600D08B5D /* FunctionalSwift-macOS */,
+				244F76CB36DBCA994B7A661D /* Products */,
+				244F796B4CC0257C908A180E /* FunctionalSwift */,
+				244F797125D3099349D4B987 /* FunctionalSwiftTests */,
+			);
+			sourceTree = "<group>";
+		};
+		244F790A6BC5DE0BB7EF1923 /* Entiry */ = {
+			isa = PBXGroup;
+			children = (
+				244F7DBAA85412252B1A54CD /* Either.swift */,
+				244F70D98D9B9CADEE97FB88 /* Result.swift */,
+				244F7C5E89AFFBCBB76A464F /* Optional+Functional.swift */,
+				244F7E136ECC332C77733736 /* Array+Functional.swift */,
+				244F7C77AF6E00F4F19BCEC2 /* Dictionary+Functional.swift */,
+			);
+			path = Entiry;
+			sourceTree = "<group>";
+		};
+		244F795DA9974C03C67A60A1 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				244F708F18BEB3C1F57314AE /* Collection+Split.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		244F796B4CC0257C908A180E /* FunctionalSwift */ = {
+			isa = PBXGroup;
+			children = (
+				244F7CEBB41CD9150B330A73 /* Info.plist */,
+				244F7A424EA6976DA024BA2B /* FunctionalSwift.h */,
+				244F790A6BC5DE0BB7EF1923 /* Entiry */,
+				244F74B21881F5049D82BE96 /* Operators.swift */,
+				244F7EED18E791AD0F7B5E62 /* Monoid.swift */,
+				244F795DA9974C03C67A60A1 /* Collection */,
+			);
+			path = FunctionalSwift;
+			sourceTree = "<group>";
+		};
+		244F797125D3099349D4B987 /* FunctionalSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				244F70FEB6DACD805FF97447 /* Info.plist */,
+				244F7CEB593B325BD3ECDF37 /* FunctionalSwiftTests.swift */,
+				244F72484354DE9341140658 /* CollectionSplitTests.swift */,
+			);
+			path = FunctionalSwiftTests;
+			sourceTree = "<group>";
+		};
+		E04EB0FF1F5567B700D08B5D /* FunctionalSwift-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				E04EB1001F5567B700D08B5D /* FunctionalSwift-watchOS.h */,
+				E04EB1011F5567B700D08B5D /* Info.plist */,
+			);
+			path = "FunctionalSwift-watchOS";
+			sourceTree = "<group>";
+		};
+		E04EB10C1F5567F600D08B5D /* FunctionalSwift-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E04EB10D1F5567F600D08B5D /* FunctionalSwift-macOS.h */,
+				E04EB10E1F5567F600D08B5D /* Info.plist */,
+			);
+			path = "FunctionalSwift-macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		244F77BCF9CB827554FCE4C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244F7496FD7D3D84226E9B5D /* FunctionalSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EB0FB1F5567B700D08B5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04EB1021F5567B700D08B5D /* FunctionalSwift-watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EB1081F5567F600D08B5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04EB10F1F5567F600D08B5D /* FunctionalSwift-macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		244F7776E86908E572F3413A /* FunctionalSwift-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244F7FF04612350F73F67F1C /* Build configuration list for PBXNativeTarget "FunctionalSwift-iOS" */;
+			buildPhases = (
+				244F76F82590117B37A1B649 /* Sources */,
+				244F752F9AB6097D2E1E918A /* Frameworks */,
+				244F77BCF9CB827554FCE4C8 /* Headers */,
+				244F78A0F8E029B5EB9BBDC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FunctionalSwift-iOS";
+			productName = FunctionalSwift;
+			productReference = 244F7D715EF25836D511378B /* FunctionalSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E04EB0FD1F5567B700D08B5D /* FunctionalSwift-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04EB1031F5567B700D08B5D /* Build configuration list for PBXNativeTarget "FunctionalSwift-watchOS" */;
+			buildPhases = (
+				E04EB0F91F5567B700D08B5D /* Sources */,
+				E04EB0FA1F5567B700D08B5D /* Frameworks */,
+				E04EB0FB1F5567B700D08B5D /* Headers */,
+				E04EB0FC1F5567B700D08B5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FunctionalSwift-watchOS";
+			productName = "FunctionalSwift-watchOS";
+			productReference = E04EB0FE1F5567B700D08B5D /* FunctionalSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E04EB10A1F5567F600D08B5D /* FunctionalSwift-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04EB1101F5567F600D08B5D /* Build configuration list for PBXNativeTarget "FunctionalSwift-macOS" */;
+			buildPhases = (
+				E04EB1061F5567F600D08B5D /* Sources */,
+				E04EB1071F5567F600D08B5D /* Frameworks */,
+				E04EB1081F5567F600D08B5D /* Headers */,
+				E04EB1091F5567F600D08B5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FunctionalSwift-macOS";
+			productName = "FunctionalSwift-macOS";
+			productReference = E04EB10B1F5567F600D08B5D /* FunctionalSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E06475961FCED8DF002BF3FB /* FunctionalSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E064759F1FCED8DF002BF3FB /* Build configuration list for PBXNativeTarget "FunctionalSwiftTests" */;
+			buildPhases = (
+				E06475931FCED8DF002BF3FB /* Sources */,
+				E06475941FCED8DF002BF3FB /* Frameworks */,
+				E06475951FCED8DF002BF3FB /* Resources */,
+				E06475A41FCED90B002BF3FB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E064759E1FCED8DF002BF3FB /* PBXTargetDependency */,
+			);
+			name = FunctionalSwiftTests;
+			productName = FunctionalSwiftTests;
+			productReference = E06475971FCED8DF002BF3FB /* FunctionalSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		244F74C250A0D56072696FA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				ORGANIZATIONNAME = Yandex.Money;
+				TargetAttributes = {
+					244F7776E86908E572F3413A = {
+						ProvisioningStyle = Automatic;
+					};
+					E04EB0FD1F5567B700D08B5D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					E04EB10A1F5567F600D08B5D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					E06475961FCED8DF002BF3FB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 244F74CC995D5D118249071D /* Build configuration list for PBXProject "FunctionalSwift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 244F78F77D2652D283F53DF3;
+			productRefGroup = 244F76CB36DBCA994B7A661D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				244F7776E86908E572F3413A /* FunctionalSwift-iOS */,
+				E04EB0FD1F5567B700D08B5D /* FunctionalSwift-watchOS */,
+				E04EB10A1F5567F600D08B5D /* FunctionalSwift-macOS */,
+				E06475961FCED8DF002BF3FB /* FunctionalSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		244F78A0F8E029B5EB9BBDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EB0FC1F5567B700D08B5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EB1091F5567F600D08B5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06475951FCED8DF002BF3FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		244F76F82590117B37A1B649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244F75F2789BC45B16596E3D /* Either.swift in Sources */,
+				244F72B229BE70E63A73BA27 /* Result.swift in Sources */,
+				244F7FE74CC7363E5F904E42 /* Operators.swift in Sources */,
+				244F7D26B24B0C3E216C266B /* Optional+Functional.swift in Sources */,
+				244F7C08EA6FBC70A504364B /* Array+Functional.swift in Sources */,
+				244F77FE1F7468DE541C9554 /* Dictionary+Functional.swift in Sources */,
+				244F7947F6A0BC5395430038 /* Monoid.swift in Sources */,
+				244F74697B562DB6682D1480 /* Collection+Split.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EB0F91F5567B700D08B5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04EB1141F5568CF00D08B5D /* Result.swift in Sources */,
+				E04EB1131F5568CF00D08B5D /* Either.swift in Sources */,
+				244F78BE7B04347AAFF1D33E /* Array+Functional.swift in Sources */,
+				244F77EB5737BC52CF4880F7 /* Dictionary+Functional.swift in Sources */,
+				244F7D4F9FDF09AF0067A343 /* Optional+Functional.swift in Sources */,
+				244F779A11916D5E1B017FA5 /* Operators.swift in Sources */,
+				244F732ADB2A1B8D98EE6AA5 /* Monoid.swift in Sources */,
+				244F7A45E121772B39229BEE /* Collection+Split.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EB1061F5567F600D08B5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04EB1161F5568CF00D08B5D /* Result.swift in Sources */,
+				E04EB1151F5568CF00D08B5D /* Either.swift in Sources */,
+				244F7C59738B999070DD8F2D /* Array+Functional.swift in Sources */,
+				244F7662B616D5BAC8932A28 /* Dictionary+Functional.swift in Sources */,
+				244F728C75B4B6F9B9E001ED /* Optional+Functional.swift in Sources */,
+				244F74E1584343CC6D7D6729 /* Operators.swift in Sources */,
+				244F7D105EAD4A1A271260D9 /* Monoid.swift in Sources */,
+				244F7B92F55DE554F61DAB63 /* Collection+Split.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06475931FCED8DF002BF3FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06475A21FCED8F3002BF3FB /* FunctionalSwiftTests.swift in Sources */,
+				E06475A31FCED8F3002BF3FB /* CollectionSplitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E064759E1FCED8DF002BF3FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E04EB10A1F5567F600D08B5D /* FunctionalSwift-macOS */;
+			targetProxy = E064759D1FCED8DF002BF3FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		244F70EB19F4A26892EA55B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FunctionalSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_NAME = FunctionalSwift;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		244F7383EC6B4622D7C1D34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FunctionalSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_NAME = FunctionalSwift;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		244F76D940BC5A1E0D93ACFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		244F7F98C457C4C035DC3AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E04EB1041F5567B700D08B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "FunctionalSwift-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_NAME = FunctionalSwift;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		E04EB1051F5567B700D08B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "FunctionalSwift-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_NAME = FunctionalSwift;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		E04EB1111F5567F600D08B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "FunctionalSwift-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_NAME = FunctionalSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E04EB1121F5567F600D08B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "FunctionalSwift-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_NAME = FunctionalSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E06475A01FCED8DF002BF3FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FunctionalSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		E06475A11FCED8DF002BF3FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FunctionalSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		244F74CC995D5D118249071D /* Build configuration list for PBXProject "FunctionalSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244F76D940BC5A1E0D93ACFE /* Debug */,
+				244F7F98C457C4C035DC3AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		244F7FF04612350F73F67F1C /* Build configuration list for PBXNativeTarget "FunctionalSwift-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244F7383EC6B4622D7C1D34F /* Debug */,
+				244F70EB19F4A26892EA55B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E04EB1031F5567B700D08B5D /* Build configuration list for PBXNativeTarget "FunctionalSwift-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04EB1041F5567B700D08B5D /* Debug */,
+				E04EB1051F5567B700D08B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E04EB1101F5567F600D08B5D /* Build configuration list for PBXNativeTarget "FunctionalSwift-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04EB1111F5567F600D08B5D /* Debug */,
+				E04EB1121F5567F600D08B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E064759F1FCED8DF002BF3FB /* Build configuration list for PBXNativeTarget "FunctionalSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06475A01FCED8DF002BF3FB /* Debug */,
+				E06475A11FCED8DF002BF3FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 244F74C250A0D56072696FA7 /* Project object */;
+}
