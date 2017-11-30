@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244F72802E14B047B23BB755 /* Prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7FDAB81445EB02FC1A52 /* Prelude.swift */; };
 		244F728C75B4B6F9B9E001ED /* Optional+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7C5E89AFFBCBB76A464F /* Optional+Functional.swift */; };
 		244F72B229BE70E63A73BA27 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F70D98D9B9CADEE97FB88 /* Result.swift */; };
 		244F732ADB2A1B8D98EE6AA5 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7EED18E791AD0F7B5E62 /* Monoid.swift */; };
 		244F74697B562DB6682D1480 /* Collection+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F708F18BEB3C1F57314AE /* Collection+Split.swift */; };
+		244F746B5A4F6FAB7FFF663D /* Prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7FDAB81445EB02FC1A52 /* Prelude.swift */; };
 		244F7496FD7D3D84226E9B5D /* FunctionalSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 244F7A424EA6976DA024BA2B /* FunctionalSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		244F74E1584343CC6D7D6729 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F74B21881F5049D82BE96 /* Operators.swift */; };
+		244F75261F07EA7697A8FF66 /* Prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7FDAB81445EB02FC1A52 /* Prelude.swift */; };
 		244F75F2789BC45B16596E3D /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7DBAA85412252B1A54CD /* Either.swift */; };
 		244F7662B616D5BAC8932A28 /* Dictionary+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7C77AF6E00F4F19BCEC2 /* Dictionary+Functional.swift */; };
 		244F779A11916D5E1B017FA5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F74B21881F5049D82BE96 /* Operators.swift */; };
@@ -76,6 +79,7 @@
 		244F7DBAA85412252B1A54CD /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		244F7E136ECC332C77733736 /* Array+Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Functional.swift"; sourceTree = "<group>"; };
 		244F7EED18E791AD0F7B5E62 /* Monoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monoid.swift; path = Types/Monoid.swift; sourceTree = "<group>"; };
+		244F7FDAB81445EB02FC1A52 /* Prelude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prelude.swift; sourceTree = "<group>"; };
 		E04EB0FE1F5567B700D08B5D /* FunctionalSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunctionalSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04EB1001F5567B700D08B5D /* FunctionalSwift-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunctionalSwift-watchOS.h"; sourceTree = "<group>"; };
 		E04EB1011F5567B700D08B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				244F74B21881F5049D82BE96 /* Operators.swift */,
 				244F7EED18E791AD0F7B5E62 /* Monoid.swift */,
 				244F795DA9974C03C67A60A1 /* Collection */,
+				244F7FDAB81445EB02FC1A52 /* Prelude.swift */,
 			);
 			path = FunctionalSwift;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 				244F77FE1F7468DE541C9554 /* Dictionary+Functional.swift in Sources */,
 				244F7947F6A0BC5395430038 /* Monoid.swift in Sources */,
 				244F74697B562DB6682D1480 /* Collection+Split.swift in Sources */,
+				244F75261F07EA7697A8FF66 /* Prelude.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +415,7 @@
 				244F779A11916D5E1B017FA5 /* Operators.swift in Sources */,
 				244F732ADB2A1B8D98EE6AA5 /* Monoid.swift in Sources */,
 				244F7A45E121772B39229BEE /* Collection+Split.swift in Sources */,
+				244F72802E14B047B23BB755 /* Prelude.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +431,7 @@
 				244F74E1584343CC6D7D6729 /* Operators.swift in Sources */,
 				244F7D105EAD4A1A271260D9 /* Monoid.swift in Sources */,
 				244F7B92F55DE554F61DAB63 /* Collection+Split.swift in Sources */,
+				244F746B5A4F6FAB7FFF663D /* Prelude.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
