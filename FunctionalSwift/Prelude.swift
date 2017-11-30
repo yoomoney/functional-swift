@@ -21,6 +21,9 @@
  * THE SOFTWARE.
  */
 
+/// Identity function.
+///
+/// - Seealso: [Identity function](https://en.wikipedia.org/wiki/Identity_function)
 public func id<T>(_ identity: T) -> T {
     return identity
 }
