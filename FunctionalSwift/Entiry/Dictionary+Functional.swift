@@ -38,8 +38,8 @@
 ///     let data: [Currency: JSON] = ...
 ///     // paymentMethods is [Currency: Price]
 ///     let paymentMethods = jsonToPrice <^> data
-public func <^><T, U, Key: Hashable>(_ transform: (T) -> U,
-                                     _ arg: [Key: T]) -> [Key: U] {
+public func <^><T, U, Key>(_ transform: (T) -> U,
+                           _ arg: [Key: T]) -> [Key: U] {
     var newDictionary: [Key: U] = [:]
     arg.forEach { pair in
         newDictionary[pair.0] = transform(pair.1)
@@ -61,7 +61,7 @@ public func <^><T, U, Key: Hashable>(_ transform: (T) -> U,
 ///
 /// - SeeAlso:
 /// `<^>` operator.
-public func <^<T, U: Hashable, V>(_ transform: T, _ arg: [U: V]) -> [U: T] {
+public func <^<T, U, V>(_ transform: T, _ arg: [U: V]) -> [U: T] {
     return { _ in transform } <^> arg
 }
 
@@ -69,6 +69,6 @@ public func <^<T, U: Hashable, V>(_ transform: T, _ arg: [U: V]) -> [U: T] {
 ///
 /// - SeeAlso:
 /// `<^>`, `<^` operators.
-public func ^><T: Hashable, U, V>(_ arg: [T: U], _ transform: V) -> [T: V] {
+public func ^><T, U, V>(_ arg: [T: U], _ transform: V) -> [T: V] {
     return { _ in transform} <^> arg
 }
