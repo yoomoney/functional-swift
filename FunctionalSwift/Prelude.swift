@@ -38,18 +38,31 @@ public func const<T, V>( _ const: T) -> (V) -> T {
 ///
 /// - Seealso: [Function composition]
 /// (https://en.wikipedia.org/wiki/Function_composition)
-public func • <A, B, C>(lhs: @escaping (B) -> C, rhs: @escaping (A) -> B) -> (A) -> C {
+public func • <A, B, C>(lhs: @escaping (B) -> C,
+                        rhs: @escaping (A) -> B) -> (A) -> C {
     return { lhs(rhs($0)) }
 }
 
 /// Application operator. This operator is redundant, since ordinary
-/// application `f(x)` means the same as `f $ x`. However, `$` has low,
+/// application `f(x)` means the same as `f <| x`. However, `<|` has low,
 /// right-associative binding precedence, so it sometimes allows parentheses to
 /// be omitted; for example:
 ///
-///     f $ g $ h(x) = f(g(h(x)))
+///     f <| g <| h(x) = f(g(h(x)))
 ///
-/// It is also useful in higher-order situations, such as zipWith($, fs, xs).
-public func $ <A, B>(lhs: (A) -> B, rhs: A) -> B {
+/// It is also useful in higher-order situations, such as zipWith(<|, fs, xs).
+public func <| <A, B>(lhs: (A) -> B, rhs: A) -> B {
     return lhs(rhs)
+}
+
+/// Application operator. This operator is redundant, since ordinary
+/// application `f(x)` means the same as `x |> f`. However, `|>` has low,
+/// left-associative binding precedence, so it sometimes allows parentheses to
+/// be omitted; for example:
+///
+///     h(x) |> g |> f = f(g(h(x)))
+///
+/// It is also useful in higher-order situations, such as zipWith(|>, fs, xs).
+public func |> <A, B>(lhs: A, rhs: (A) -> B) -> B {
+    return rhs(lhs)
 }

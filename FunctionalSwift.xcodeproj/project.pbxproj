@@ -30,7 +30,12 @@
 		244F7D105EAD4A1A271260D9 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7EED18E791AD0F7B5E62 /* Monoid.swift */; };
 		244F7D26B24B0C3E216C266B /* Optional+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7C5E89AFFBCBB76A464F /* Optional+Functional.swift */; };
 		244F7D4F9FDF09AF0067A343 /* Optional+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7C5E89AFFBCBB76A464F /* Optional+Functional.swift */; };
+		244F7F752EB3C37BF4266698 /* PreludeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7242C1F043958C360E38 /* PreludeTests.swift */; };
 		244F7FE74CC7363E5F904E42 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F74B21881F5049D82BE96 /* Operators.swift */; };
+		E0113E5D1FD54676002D7844 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0113E5B1FD54676002D7844 /* Quick.framework */; };
+		E0113E5E1FD54676002D7844 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0113E5C1FD54676002D7844 /* Nimble.framework */; };
+		E0113E5F1FD5468B002D7844 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E0113E5C1FD54676002D7844 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0113E601FD5468B002D7844 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E0113E5B1FD54676002D7844 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E04EB1021F5567B700D08B5D /* FunctionalSwift-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E04EB1001F5567B700D08B5D /* FunctionalSwift-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E04EB10F1F5567F600D08B5D /* FunctionalSwift-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E04EB10D1F5567F600D08B5D /* FunctionalSwift-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E04EB1131F5568CF00D08B5D /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F7DBAA85412252B1A54CD /* Either.swift */; };
@@ -57,8 +62,10 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 10;
 			files = (
+				E0113E5F1FD5468B002D7844 /* Nimble.framework in CopyFiles */,
+				E0113E601FD5468B002D7844 /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +75,9 @@
 		244F708F18BEB3C1F57314AE /* Collection+Split.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Split.swift"; sourceTree = "<group>"; };
 		244F70D98D9B9CADEE97FB88 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		244F70FEB6DACD805FF97447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		244F7242C1F043958C360E38 /* PreludeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreludeTests.swift; sourceTree = "<group>"; };
 		244F72484354DE9341140658 /* CollectionSplitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionSplitTests.swift; sourceTree = "<group>"; };
+		244F73E5EFC705630DB63FD4 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = "<group>"; };
 		244F74B21881F5049D82BE96 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		244F7A424EA6976DA024BA2B /* FunctionalSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionalSwift.h; sourceTree = "<group>"; };
 		244F7C5E89AFFBCBB76A464F /* Optional+Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Functional.swift"; sourceTree = "<group>"; };
@@ -80,6 +89,8 @@
 		244F7E136ECC332C77733736 /* Array+Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Functional.swift"; sourceTree = "<group>"; };
 		244F7EED18E791AD0F7B5E62 /* Monoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monoid.swift; path = Types/Monoid.swift; sourceTree = "<group>"; };
 		244F7FDAB81445EB02FC1A52 /* Prelude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prelude.swift; sourceTree = "<group>"; };
+		E0113E5B1FD54676002D7844 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		E0113E5C1FD54676002D7844 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		E04EB0FE1F5567B700D08B5D /* FunctionalSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunctionalSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04EB1001F5567B700D08B5D /* FunctionalSwift-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunctionalSwift-watchOS.h"; sourceTree = "<group>"; };
 		E04EB1011F5567B700D08B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +126,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0113E5D1FD54676002D7844 /* Quick.framework in Frameworks */,
+				E0113E5E1FD54676002D7844 /* Nimble.framework in Frameworks */,
 				E064759C1FCED8DF002BF3FB /* FunctionalSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +154,8 @@
 				244F76CB36DBCA994B7A661D /* Products */,
 				244F796B4CC0257C908A180E /* FunctionalSwift */,
 				244F797125D3099349D4B987 /* FunctionalSwiftTests */,
+				244F73E5EFC705630DB63FD4 /* Cartfile.private */,
+				E0113E5A1FD54675002D7844 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,8 +199,18 @@
 				244F70FEB6DACD805FF97447 /* Info.plist */,
 				244F7CEB593B325BD3ECDF37 /* FunctionalSwiftTests.swift */,
 				244F72484354DE9341140658 /* CollectionSplitTests.swift */,
+				244F7242C1F043958C360E38 /* PreludeTests.swift */,
 			);
 			path = FunctionalSwiftTests;
+			sourceTree = "<group>";
+		};
+		E0113E5A1FD54675002D7844 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0113E5C1FD54676002D7844 /* Nimble.framework */,
+				E0113E5B1FD54676002D7844 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E04EB0FF1F5567B700D08B5D /* FunctionalSwift-watchOS */ = {
@@ -294,8 +319,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E064759F1FCED8DF002BF3FB /* Build configuration list for PBXNativeTarget "FunctionalSwiftTests" */;
 			buildPhases = (
-				E06475931FCED8DF002BF3FB /* Sources */,
 				E06475941FCED8DF002BF3FB /* Frameworks */,
+				E06475931FCED8DF002BF3FB /* Sources */,
 				E06475951FCED8DF002BF3FB /* Resources */,
 				E06475A41FCED90B002BF3FB /* CopyFiles */,
 			);
@@ -441,6 +466,7 @@
 			files = (
 				E06475A21FCED8F3002BF3FB /* FunctionalSwiftTests.swift in Sources */,
 				E06475A31FCED8F3002BF3FB /* CollectionSplitTests.swift in Sources */,
+				244F7F752EB3C37BF4266698 /* PreludeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +738,10 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = FunctionalSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -737,6 +767,10 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = FunctionalSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
