@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Either Enum Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/Either" class="dashAnchor"></a>
+    <a title="Either Enum Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FunctionalSwift Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/yandex-money/functional-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">FunctionalSwift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Either Enum Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Either.html">Either</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions/-&lt;&lt;(_:_:).html">-&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/-&lt;&lt;(_:_:).html">-&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/-&lt;&lt;(_:_:).html">-&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;*&gt;(_:_:).html">&lt;*&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;*&gt;(_:_:).html">&lt;*&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;*&gt;(_:_:).html">&lt;*&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^(_:_:).html">&lt;^(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^(_:_:).html">&lt;^(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^(_:_:).html">&lt;^(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^(_:_:).html">&lt;^(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^&gt;(_:_:).html">&lt;^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^&gt;(_:_:).html">&lt;^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^&gt;(_:_:).html">&lt;^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^&gt;(_:_:).html">&lt;^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;|(_:_:).html">&lt;|(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&gt;&gt;-(_:_:).html">&gt;&gt;-(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&gt;&gt;-(_:_:).html">&gt;&gt;-(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&gt;&gt;-(_:_:).html">&gt;&gt;-(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/^&gt;(_:_:).html">^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/^&gt;(_:_:).html">^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/^&gt;(_:_:).html">^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/^&gt;(_:_:).html">^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift5constxq_cxr0_lF">const(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift2idxxlF">id(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA2AA6EitherOyq1_q0_Gq0_x_q_tc_ADyq1_xGADyq1_q_Gtr2_lF">liftA2(_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA2Sayq0_Gq0_x_q_tc_SayxGSayq_Gtr1_lF">liftA2(_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA2q0_Sgq0_x_q_tc_xSgq_Sgtr1_lF">liftA2(_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA3AA6EitherOyq2_q1_Gq1_x_q_q0_tc_ADyq2_xGADyq2_q_GADyq2_q0_Gtr3_lF">liftA3(_:_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA3Sayq1_Gq1_x_q_q0_tc_SayxGSayq_GSayq0_Gtr2_lF">liftA3(_:_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA3q1_Sgq1_x_q_q0_tc_xSgq_Sgq0_Sgtr2_lF">liftA3(_:_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/|&gt;(_:_:).html">|&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/•(_:_:).html">•(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Monoid.html">Monoid</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:15FunctionalSwift6Resulta">Result</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Either</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Either</span><span class="o">&lt;</span><span class="kt">L</span><span class="p">,</span> <span class="kt">R</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>Either</code> type represents values with two possibilities: a value of type <code>Either&lt;A, B&gt;</code> is either <code>left(a)</code> or
+<code>right(b)</code>.</p>
+
+<p>The <code>Either</code> type is sometimes used to represent a value which is either correct or an error; by convention,
+the <code>left</code> constructor is used to hold an error value and the <code>right</code> constructor is used to hold a correct
+value (mnemonic: <q>right</q> also means <q>correct</q>).</p>
+
+<p><strong>Examples</strong>:</p>
+
+<p>The type <code>Either&lt;String, Int&gt;</code> is the type of values which can be either a <code>String</code> or an <code>Int</code>. The <code>left</code>
+constructor can be used only on <code>String</code>s, and the <code>right</code> constructor can be used only on <code>Int</code>s:</p>
+<pre class="highlight plaintext"><code>&gt;&gt;&gt; let s: Either&lt;String, Int&gt; = .left("foo")
+&gt;&gt;&gt; s
+s: Either&lt;String, Int&gt; = left {
+    left = "foo"
+}
+&gt;&gt;&gt; let n: Either&lt;String, Int&gt; = .right(3)
+&gt;&gt;&gt; n
+n: Either&lt;String, Int&gt; = right {
+    right = 3
+}
+&gt;&gt;&gt; type(of: s)
+Either&lt;String, Int&gt;.Type = Either&lt;String, Int&gt;
+&gt;&gt;&gt; type(of: n)
+Either&lt;String, Int&gt;.Type = Either&lt;String, Int&gt;
+</code></pre>
+
+<p>The <code>map(_:)</code> from our <code>Functor</code> instance will ignore <code>left</code> values, but will apply the supplied function to values
+contained in a <code>right</code>:</p>
+<pre class="highlight plaintext"><code>&gt;&gt;&gt; let s: Either&lt;String, Int&gt; = .left("foo")
+&gt;&gt;&gt; let n: Either&lt;String, Int&gt; = .right(3)
+&gt;&gt;&gt; s.map { $0 * 2 }
+Either&lt;String, Int&gt; = left {
+    left = "foo"
+}
+&gt;&gt;&gt; n.map { $0 * 2 }
+Either&lt;String, Int&gt; = right {
+    right = 6
+}
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF"></a>
+                    <a name="//apple_ref/swift/Element/left" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Left value of <code>Either</code>.</p>
+
+<p>If <code>Either</code> used as result of an operation this contains error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="nf">left</span><span class="p">(</span><span class="kt">L</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF"></a>
+                    <a name="//apple_ref/swift/Element/right" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Right value of <code>Either</code>.</p>
+
+<p>If <code>Either</code> used as result of an operation this contains success value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="nf">right</span><span class="p">(</span><span class="kt">R</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO3mapACyxqd__Gqd__q_clF"></a>
+                    <a name="//apple_ref/swift/Method/map(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO3mapACyxqd__Gqd__q_clF">map(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Evaluates the given closure when this <code>Either</code> instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code>,
+passing the unwrapped value as a parameter.</p>
+
+<p>Use the <code>map(_:)</code> method with a closure that returns a non-either value.
+This example performs an arithmetic operation on an
+either integer.</p>
+<pre class="highlight plaintext"><code>&gt;&gt;&gt; func stringToInt(_ string: String) -&gt; Either&lt;String, Int&gt; {
+&gt;&gt;&gt;     switch Int(string) {
+&gt;&gt;&gt;     case let .some(int):
+&gt;&gt;&gt;         return .right(int)
+&gt;&gt;&gt;     case .none:
+&gt;&gt;&gt;         return .left("Not an integer")
+&gt;&gt;&gt;     }
+&gt;&gt;&gt; }
+&gt;&gt;&gt; let possibleNumber = stringToInt("42")
+&gt;&gt;&gt; let possibleSquare = possibleNumber.map { $0 * $0 }
+&gt;&gt;&gt; possibleSquare
+Either&lt;String, Int&gt; = right {
+    right = 1764
+}
+
+&gt;&gt;&gt; let noNumber: Int? = stringToInt("test")
+&gt;&gt;&gt; let noSquare = noNumber.map { $0 * $0 }
+&gt;&gt;&gt; noSquare
+Either&lt;String, Int&gt; = left {
+    left = "Not an integer"
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">map</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="p">(</span><span class="kt">R</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Either</span><span class="o">&lt;</span><span class="kt">L</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes the unwrapped value
+of the instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The result of the given closure. If this instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>,
+returns <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO7flatMapACyxqd__GAEq_clF"></a>
+                    <a name="//apple_ref/swift/Method/flatMap(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO7flatMapACyxqd__GAEq_clF">flatMap(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Evaluates the given closure when this <code>Either</code> instance is not <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>,
+passing the unwrapped value as a parameter.</p>
+
+<p>Use the <code>flatMap(_:)</code> method with a closure that returns an either value.
+This example performs an arithmetic operation with an either result on
+an either integer.</p>
+<pre class="highlight plaintext"><code>&gt;&gt;&gt; let possibleNumber: Either&lt;String, Int&gt; = stringToInt("42")
+&gt;&gt;&gt; let nonOverflowingSquare = possibleNumber.flatMap { x -&gt; Either&lt;String, Int&gt; in
+&gt;&gt;&gt;    let (result, overflowed) = x.multipliedReportingOverflow(by: x)
+&gt;&gt;&gt;    return overflowed == .overflow ? "Square overflow integer capacity" : result
+&gt;&gt;&gt; }
+&gt;&gt;&gt; nonOverflowingSquare
+Either&lt;String, Int&gt; = right {
+    right = 1764
+}
+
+&gt;&gt;&gt; let noNumber: Int? = stringToInt("test")
+&gt;&gt;&gt; let nonOverflowingSquare = possibleNumber.flatMap { x -&gt; Either&lt;String, Int&gt; in
+&gt;&gt;&gt;    let (result, overflowed) = x.multipliedReportingOverflow(by: x)
+&gt;&gt;&gt;    return overflowed == .overflow ? "Square overflow integer capacity" : result
+&gt;&gt;&gt; }
+&gt;&gt;&gt; nonOverflowingSquare
+Either&lt;String, Int&gt; = left {
+    left = "Not an integer"
+}
+
+&gt;&gt;&gt; let possibleNumber: Either&lt;String, Int&gt; = stringToInt("1234567890123")
+&gt;&gt;&gt; let nonOverflowingSquare = possibleNumber.flatMap { x -&gt; Either&lt;String, Int&gt; in
+&gt;&gt;&gt;    let (result, overflowed) = x.multipliedReportingOverflow(by: x)
+&gt;&gt;&gt;    return overflowed == .overflow ? "Square overflow integer capacity" : result
+&gt;&gt;&gt; }
+&gt;&gt;&gt; nonOverflowingSquare
+Either&lt;String, Int&gt; = left {
+    left = "Square overflow integer capacity"
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">flatMap</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="p">(</span><span class="kt">R</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Either</span><span class="o">&lt;</span><span class="kt">L</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Either</span><span class="o">&lt;</span><span class="kt">L</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes the unwrapped value
+of the instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The result of the given closure. If this instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>,
+returns <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO5firstACyqd__q_Gqd__xclF"></a>
+                    <a name="//apple_ref/swift/Method/first(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO5firstACyqd__q_Gqd__xclF">first(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Evaluates the given closure when this <code>Either</code> instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>,
+passing the unwrapped value as a parameter.</p>
+
+<p>Use the <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO6secondACyxqd__Gqd__q_clF">second(_:)</a></code> method for evaluates when this <code>Either</code> is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code>.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO3mapACyxqd__Gqd__q_clF">map(_:)</a></code>, <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO6secondACyxqd__Gqd__q_clF">second(_:)</a></code> methods.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">first</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="p">(</span><span class="kt">L</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Either</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">R</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes the unwrapped value
+of the instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The result of the given closure. If this instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code>,
+returns <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO6secondACyxqd__Gqd__q_clF"></a>
+                    <a name="//apple_ref/swift/Method/second(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO6secondACyxqd__Gqd__q_clF">second(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Evaluates the given closure when this <code>Either</code> instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code>,
+passing the unwrapped value as a parameter.</p>
+
+<p>This is a synonym for the <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO3mapACyxqd__Gqd__q_clF">map(_:)</a></code> method.</p>
+
+<p>Use the <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5firstACyqd__q_Gqd__xclF">first(_:)</a></code> method for evaluates when this <code>Either</code> is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO3mapACyxqd__Gqd__q_clF">map(_:)</a></code>, <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5firstACyqd__q_Gqd__xclF">first(_:)</a></code> methods.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">second</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="p">(</span><span class="kt">R</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Either</span><span class="o">&lt;</span><span class="kt">L</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes the unwrapped value
+of the instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The result of the given closure. If this instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>,
+returns <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO5bimapACyqd__qd_0_Gqd__xc_qd_0_q_ctr0_lF"></a>
+                    <a name="//apple_ref/swift/Method/bimap(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO5bimapACyqd__qd_0_Gqd__xc_qd_0_q_ctr0_lF">bimap(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Evaluates the first given closure when this <code>Either</code> instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>,
+and second given closure when this <code>Either</code> is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code></p>
+
+<p>Applying this method to Bifunctor is equivalent to applying <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5firstACyqd__q_Gqd__xclF">first(_:)</a></code>
+and <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO6secondACyxqd__Gqd__q_clF">second(_:)</a></code> methods sequentially.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5firstACyqd__q_Gqd__xclF">first(_:)</a></code>, <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO6secondACyxqd__Gqd__q_clF">second(_:)</a></code> methods.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">bimap</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">Z</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="p">(</span><span class="kt">L</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">,</span> <span class="n">_</span> <span class="nv">s</span><span class="p">:</span> <span class="p">(</span><span class="kt">R</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Z</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Either</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">Z</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>f</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes the unwrapped value
+of the first.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>s</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes the unwrapped value
+of the second.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The result of the given closure.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO7mapLeftACyqd__q_Gqd__xclF"></a>
+                    <a name="//apple_ref/swift/Method/mapLeft(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO7mapLeftACyqd__q_Gqd__xclF">mapLeft(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Evaluates the given closure when this <code>Either</code> instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>,
+passing the unwrapped value as a parameter.</p>
+
+<p>This is a synonym for the <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5firstACyqd__q_Gqd__xclF">first(_:)</a></code> method.</p>
+
+<p>Use the <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO6secondACyxqd__Gqd__q_clF">second(_:)</a></code> method for evaluates when this <code>Either</code> is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code>.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5firstACyqd__q_Gqd__xclF">first(_:)</a></code> method.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">mapLeft</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">transform</span><span class="p">:</span> <span class="p">(</span><span class="kt">L</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Either</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">R</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes the unwrapped value
+of the instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The result of the given closure. If this instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code>,
+returns <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO4leftxSgv"></a>
+                    <a name="//apple_ref/swift/Property/left" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO4leftxSgv">left</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns value if the <code>Either</code> instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code> or <code>nil</code> if it is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">left</span><span class="p">:</span> <span class="kt">L</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO5rightq_Sgv"></a>
+                    <a name="//apple_ref/swift/Property/right" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO5rightq_Sgv">right</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns value if the <code>Either</code> instance is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code> or <code>nil</code> if it is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">right</span><span class="p">:</span> <span class="kt">R</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6EitherO6eitherqd__qd__xc_qd__q_ctlF"></a>
+                    <a name="//apple_ref/swift/Method/either(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6EitherO6eitherqd__qd__xc_qd__q_ctlF">either(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Case analysis for the Either type.</p>
+
+<p>If the value is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>, apply the first function to <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO4leftACyxq_GxcAEmr0_lF">left</a></code>; if it is <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code>,
+apply the second function to <code><a href="../Enums/Either.html#/s:15FunctionalSwift6EitherO5rightACyxq_Gq_cAEmr0_lF">right</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">either</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">f</span><span class="p">:</span> <span class="p">(</span><span class="kt">L</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">,</span> <span class="n">_</span> <span class="nv">s</span><span class="p">:</span> <span class="p">(</span><span class="kt">R</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>f</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first function.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>s</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The second function.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The result of the first or second function.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/yandex-money/functional-swift" target="_blank" rel="external">NBCO Yandex.Money LLC</a>. All rights reserved. (Last updated: 2017-12-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
