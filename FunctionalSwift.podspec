@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'FunctionalSwift'
-  spec.version      = '1.0.1'
+  spec.version      = '1.0.3'
   spec.license = { 
     :type => "MIT", 
     :file => "LICENSE" 
