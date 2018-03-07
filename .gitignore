@@ -55,4 +55,4 @@ fastlane/test_output
 .idea/
 
 build/
-docs/
+docs/undocumented.json

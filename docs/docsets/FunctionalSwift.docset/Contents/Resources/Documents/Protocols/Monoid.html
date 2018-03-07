@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Monoid Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/Monoid" class="dashAnchor"></a>
+    <a title="Monoid Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FunctionalSwift Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/yandex-money/functional-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">FunctionalSwift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Monoid Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Either.html">Either</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions/-&lt;&lt;(_:_:).html">-&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/-&lt;&lt;(_:_:).html">-&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/-&lt;&lt;(_:_:).html">-&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;*&gt;(_:_:).html">&lt;*&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;*&gt;(_:_:).html">&lt;*&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;*&gt;(_:_:).html">&lt;*&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^(_:_:).html">&lt;^(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^(_:_:).html">&lt;^(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^(_:_:).html">&lt;^(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^(_:_:).html">&lt;^(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^&gt;(_:_:).html">&lt;^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^&gt;(_:_:).html">&lt;^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^&gt;(_:_:).html">&lt;^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;^&gt;(_:_:).html">&lt;^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;|(_:_:).html">&lt;|(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&gt;&gt;-(_:_:).html">&gt;&gt;-(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&gt;&gt;-(_:_:).html">&gt;&gt;-(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&gt;&gt;-(_:_:).html">&gt;&gt;-(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/^&gt;(_:_:).html">^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/^&gt;(_:_:).html">^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/^&gt;(_:_:).html">^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/^&gt;(_:_:).html">^&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift5constxq_cxr0_lF">const(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift2idxxlF">id(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA2AA6EitherOyq1_q0_Gq0_x_q_tc_ADyq1_xGADyq1_q_Gtr2_lF">liftA2(_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA2Sayq0_Gq0_x_q_tc_SayxGSayq_Gtr1_lF">liftA2(_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA2q0_Sgq0_x_q_tc_xSgq_Sgtr1_lF">liftA2(_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA3AA6EitherOyq2_q1_Gq1_x_q_q0_tc_ADyq2_xGADyq2_q_GADyq2_q0_Gtr3_lF">liftA3(_:_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA3Sayq1_Gq1_x_q_q0_tc_SayxGSayq_GSayq0_Gtr2_lF">liftA3(_:_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:15FunctionalSwift6liftA3q1_Sgq1_x_q_q0_tc_xSgq_Sgq0_Sgtr2_lF">liftA3(_:_:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/|&gt;(_:_:).html">|&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/•(_:_:).html">•(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Monoid.html">Monoid</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:15FunctionalSwift6Resulta">Result</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Monoid</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Monoid</span></code></pre>
+
+                </div>
+              </div>
+            <p>The protocol of monoids (types with an associative binary operation that has an identity).</p>
+
+<p>Instances should satisfy the following laws:</p>
+<pre class="highlight plaintext"><code>x.mappend(.mempty) = x
+T.mempty.mappend(x) = x
+x.mappend(y.mappend(z)) = x.mappend(y).mappend(z)
+[x, y, z].mconcat() = [x, y, z].reduce(T.mempty, { $0.mappend($1) }
+</code></pre>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <a href="https://en.wikipedia.org/wiki/Associative_property">Associative binary function</a>
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6MonoidP6memptyxvZ"></a>
+                    <a name="//apple_ref/swift/Variable/mempty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6MonoidP6memptyxvZ">mempty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identity of <code><a href="../Protocols/Monoid.html#/s:15FunctionalSwift6MonoidP7mappendxxF">mappend(_:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">mempty</span><span class="p">:</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15FunctionalSwift6MonoidP7mappendxxF"></a>
+                    <a name="//apple_ref/swift/Method/mappend(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15FunctionalSwift6MonoidP7mappendxxF">mappend(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An associative operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">mappend</span><span class="p">(</span><span class="n">_</span> <span class="nv">monoid</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/yandex-money/functional-swift" target="_blank" rel="external">NBCO Yandex.Money LLC</a>. All rights reserved. (Last updated: 2017-12-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
