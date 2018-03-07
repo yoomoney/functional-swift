@@ -90,4 +90,55 @@ public extension Collection {
 
         return  result
     }
+    
+    /// `splitPlaces([])` split a list into chunks of the given lengths.
+    /// If the input list is longer than the total of the given lengths, then the remaining elements are dropped.
+    /// If the list is shorter than the total of the given lengths,
+    /// then the result may contain fewer chunks than requested, and the last chunk may be shorter than requested.
+    ///
+    /// If chunk <= 0, `splitPlaces([])` returns empty list.
+    /// For example:
+    ///
+    ///     [-7, 5, 9].splitPlaces([-1]) = [[]]
+    ///
+    /// - Parameter places: List of chunks.
+    /// - Returns: Array of chunks-size pieces.
+    public func splitPlaces(_ places: [Int]) -> [SubSequence] {
+        guard let firstPlace = places.first else {
+            return []
+        }
+        
+        var result: [SubSequence] = []
+        
+        var subSequenceStart: Index = startIndex
+        var subSequenceEnd: Index = startIndex
+        
+        var currentSize = 0
+        var currentPlaceIndex = 0
+        var currentPlace = firstPlace
+        
+        while subSequenceEnd != endIndex {
+            guard currentSize == currentPlace || currentPlace <= 0 else {
+                formIndex(after: &subSequenceEnd)
+                currentSize += 1
+                continue
+            }
+            result.append(self[subSequenceStart..<subSequenceEnd])
+            subSequenceStart = subSequenceEnd
+            currentSize = 0
+            currentPlaceIndex += 1
+            
+            if currentPlaceIndex < places.count {
+                currentPlace = places[currentPlaceIndex]
+            } else {
+                break
+            }
+        }
+        
+        if subSequenceStart != endIndex && currentPlaceIndex < places.count {
+            result.append(self[subSequenceStart..<endIndex])
+        }
+        
+        return result
+    }
 }
