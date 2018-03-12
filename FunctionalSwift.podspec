@@ -1,16 +1,16 @@
 Pod::Spec.new do |spec|
   spec.name         = 'FunctionalSwift'
-  spec.version      = '1.0.4'
-  spec.license = { 
-    :type => "MIT", 
-    :file => "LICENSE" 
+  spec.version      = '1.0.5'
+  spec.license = {
+    :type => "MIT",
+    :file => "LICENSE"
   }
   spec.homepage     = 'https://github.com/yandex-money/functional-swift'
   spec.authors      = {
     'Alexander Zalutskiy' => 'metalhead.sanya@gmail.com'
   }
   spec.summary      = 'Categories and arrows (morphisms) for swift language.'
-  spec.source       = { 
+  spec.source       = {
     :git => 'https://github.com/yandex-money/functional-swift.git',
     :tag => spec.version.to_s
   }
