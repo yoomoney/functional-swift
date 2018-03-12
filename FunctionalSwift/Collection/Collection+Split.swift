@@ -91,15 +91,15 @@ public extension Collection {
         return  result
     }
     
-    /// `splitPlaces([])` split a list into chunks of the given lengths.
+    /// `split(places: [])` split a list into chunks of the given lengths.
     /// If the input list is longer than the total of the given lengths, then the remaining elements are dropped.
     /// If the list is shorter than the total of the given lengths,
     /// then the result may contain fewer chunks than requested, and the last chunk may be shorter than requested.
     ///
-    /// If chunk <= 0, `splitPlaces([])` returns empty list.
+    /// If chunk <= 0, `split(places: [])` returns empty list.
     /// For example:
     ///
-    ///     [-7, 5, 9].splitPlaces([-1]) = [[]]
+    ///     [-7, 5, 9].split(places: [-1]) = [[]]
     ///
     /// - Parameter places: List of chunks.
     /// - Returns: Array of chunks-size pieces.
