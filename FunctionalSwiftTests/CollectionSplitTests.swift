@@ -56,14 +56,14 @@ class CollectionSplitTests: XCTestCase {
     }
     
     func testSplitPlaces() {
-        XCTAssert(emptyData.splitPlaces([5]).elementsEqual([], by: ==))
-        XCTAssert(data.splitPlaces([-5]).elementsEqual([[]], by: ==))
+        XCTAssert(emptyData.split(places: [5]).elementsEqual([], by: ==))
+        XCTAssert(data.split(places: [-5]).elementsEqual([[]], by: ==))
         
-        XCTAssert(data.splitPlaces([2, -3, 4]).elementsEqual([[1, 2], [], [3, 4, 5, 6]], by: ==))
-        XCTAssert(data.splitPlaces([2, 0, 4]).elementsEqual([[1, 2], [], [3, 4, 5, 6]], by: ==))
-        XCTAssert(data.splitPlaces([2, 3, 5]).elementsEqual([[1, 2], [3, 4, 5], [6, 7, 8, 9, 0]], by: ==))
-        XCTAssert(data.splitPlaces([2, 3, 4]).elementsEqual([[1, 2], [3, 4, 5], [6, 7, 8, 9]], by: ==))
-        XCTAssert(data.splitPlaces([4, 9]).elementsEqual([[1, 2, 3, 4], [5, 6, 7, 8, 9, 0]], by: ==))
-        XCTAssert(data.splitPlaces([4, 9, 10]).elementsEqual([[1, 2, 3, 4], [5, 6, 7, 8, 9, 0]], by: ==))
+        XCTAssert(data.split(places: [2, -3, 4]).elementsEqual([[1, 2], [], [3, 4, 5, 6]], by: ==))
+        XCTAssert(data.split(places: [2, 0, 4]).elementsEqual([[1, 2], [], [3, 4, 5, 6]], by: ==))
+        XCTAssert(data.split(places: [2, 3, 5]).elementsEqual([[1, 2], [3, 4, 5], [6, 7, 8, 9, 0]], by: ==))
+        XCTAssert(data.split(places: [2, 3, 4]).elementsEqual([[1, 2], [3, 4, 5], [6, 7, 8, 9]], by: ==))
+        XCTAssert(data.split(places: [4, 9]).elementsEqual([[1, 2, 3, 4], [5, 6, 7, 8, 9, 0]], by: ==))
+        XCTAssert(data.split(places: [4, 9, 10]).elementsEqual([[1, 2, 3, 4], [5, 6, 7, 8, 9, 0]], by: ==))
     }
 }

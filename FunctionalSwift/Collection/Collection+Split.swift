@@ -103,7 +103,7 @@ public extension Collection {
     ///
     /// - Parameter places: List of chunks.
     /// - Returns: Array of chunks-size pieces.
-    public func splitPlaces(_ places: [Int]) -> [SubSequence] {
+    public func split(places: [Int]) -> [SubSequence] {
         guard let firstPlace = places.first else {
             return []
         }
