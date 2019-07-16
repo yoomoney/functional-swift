@@ -23,5 +23,5 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-gem 'cocoapods', '~> 1.4.0'
+gem 'cocoapods', '~> 1.7.4'
 gem 'jazzy', '~> 0.8.3'
