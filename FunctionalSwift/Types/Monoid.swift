@@ -47,7 +47,7 @@ public extension Sequence where Iterator.Element: Monoid {
     /// but the function must be an optimized version for specific types.
     ///
     /// - Returns: Element combined with `mappend(_:)` function.
-    public func mconcat() -> Iterator.Element {
+    func mconcat() -> Iterator.Element {
         return reduce(Iterator.Element.mempty) { $0.mappend($1) }
     }
 }

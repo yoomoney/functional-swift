@@ -28,7 +28,7 @@ public extension Collection where Iterator.Element: Equatable {
     /// - Parameter element: Splitter.
     /// - Returns: An array of subsequences, split from this collection’s
     ///   elements.
-    public func split(on element: Iterator.Element) -> [SubSequence] {
+    func split(on element: Iterator.Element) -> [SubSequence] {
         return split { $0 == element }
     }
 
@@ -37,7 +37,7 @@ public extension Collection where Iterator.Element: Equatable {
     /// - Parameter elements: Splitters.
     /// - Returns: An array of subsequences, split from this collection’s
     ///   elements.
-    public func split<C: Collection>(oneOf elements: C)-> [SubSequence]
+    func split<C: Collection>(oneOf elements: C)-> [SubSequence]
         where
         C.Iterator.Element == Iterator.Element {
         return split { elements.contains($0) }
@@ -62,7 +62,7 @@ public extension Collection {
     ///
     /// - Parameter size: Size of chunk.
     /// - Returns: Array of length-size pieces.
-    public func chunks(of size: Int) -> [SubSequence] {
+    func chunks(of size: Int) -> [SubSequence] {
         guard size > 0 else {
             return []
         }
@@ -103,7 +103,7 @@ public extension Collection {
     ///
     /// - Parameter places: List of chunks.
     /// - Returns: Array of chunks-size pieces.
-    public func split(places: [Int]) -> [SubSequence] {
+    func split(places: [Int]) -> [SubSequence] {
         guard let firstPlace = places.first else {
             return []
         }
