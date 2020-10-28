@@ -1,6 +1,6 @@
 # The MIT License
 #
-# Copyright (c) 2007—2017 NBCO Yandex.Money LLC
+# Copyright © 2020 NBCO YooMoney LLC
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -23,5 +23,5 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-gem 'cocoapods', '~> 1.7.4'
-gem 'jazzy', '~> 0.8.3'
+gem 'cocoapods', '~> 1.10.0'
+gem 'jazzy', '~> 0.13.0'

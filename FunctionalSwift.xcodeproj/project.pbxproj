@@ -54,6 +54,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		304C37752549A16100677DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 244F74C250A0D56072696FA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 244F7776E86908E572F3413A;
+			remoteInfo = "FunctionalSwift-iOS";
+		};
+		304C37772549A16600677DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 244F74C250A0D56072696FA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E04EB0FD1F5567B700D08B5D;
+			remoteInfo = "FunctionalSwift-watchOS";
+		};
 		E064759D1FCED8DF002BF3FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 244F74C250A0D56072696FA7 /* Project object */;
@@ -353,6 +367,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				304C37762549A16100677DF8 /* PBXTargetDependency */,
+				304C37782549A16600677DF8 /* PBXTargetDependency */,
 				E064759E1FCED8DF002BF3FB /* PBXTargetDependency */,
 			);
 			name = FunctionalSwiftTests;
@@ -368,7 +384,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = Yandex.Money;
+				ORGANIZATIONNAME = YooMoney;
 				TargetAttributes = {
 					244F7776E86908E572F3413A = {
 						LastSwiftMigration = 1020;
@@ -376,14 +392,17 @@
 					};
 					E04EB0FD1F5567B700D08B5D = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1170;
 						ProvisioningStyle = Automatic;
 					};
 					E04EB10A1F5567F600D08B5D = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1170;
 						ProvisioningStyle = Automatic;
 					};
 					E06475961FCED8DF002BF3FB = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1170;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -393,6 +412,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = 244F78F77D2652D283F53DF3;
@@ -507,6 +527,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		304C37762549A16100677DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 244F7776E86908E572F3413A /* FunctionalSwift-iOS */;
+			targetProxy = 304C37752549A16100677DF8 /* PBXContainerItemProxy */;
+		};
+		304C37782549A16600677DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E04EB0FD1F5567B700D08B5D /* FunctionalSwift-watchOS */;
+			targetProxy = 304C37772549A16600677DF8 /* PBXContainerItemProxy */;
+		};
 		E064759E1FCED8DF002BF3FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E04EB10A1F5567F600D08B5D /* FunctionalSwift-macOS */;
@@ -530,7 +560,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -553,7 +583,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -697,11 +727,11 @@
 				INFOPLIST_FILE = "FunctionalSwift-watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -720,11 +750,11 @@
 				INFOPLIST_FILE = "FunctionalSwift-watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -745,11 +775,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -768,11 +798,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -798,10 +828,10 @@
 				INFOPLIST_FILE = FunctionalSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -827,10 +857,10 @@
 				INFOPLIST_FILE = FunctionalSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.mobile.money.FunctionalSwiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
