@@ -1,6 +1,6 @@
 /* The MIT License
  *
- * Copyright (c) 2007—2017 NBCO Yandex.Money LLC
+ * Copyright © 2020 NBCO YooMoney LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -37,7 +37,7 @@ public extension Collection where Iterator.Element: Equatable {
     /// - Parameter elements: Splitters.
     /// - Returns: An array of subsequences, split from this collection’s
     ///   elements.
-    func split<C: Collection>(oneOf elements: C)-> [SubSequence]
+    func split<C: Collection>(oneOf elements: C) -> [SubSequence]
         where
         C.Iterator.Element == Iterator.Element {
         return split { elements.contains($0) }
@@ -90,7 +90,7 @@ public extension Collection {
 
         return  result
     }
-    
+
     /// `split(places: [])` split a list into chunks of the given lengths.
     /// If the input list is longer than the total of the given lengths, then the remaining elements are dropped.
     /// If the list is shorter than the total of the given lengths,
@@ -107,16 +107,16 @@ public extension Collection {
         guard let firstPlace = places.first else {
             return []
         }
-        
+
         var result: [SubSequence] = []
-        
+
         var subSequenceStart: Index = startIndex
         var subSequenceEnd: Index = startIndex
-        
+
         var currentSize = 0
         var currentPlaceIndex = 0
         var currentPlace = firstPlace
-        
+
         while subSequenceEnd != endIndex {
             guard currentSize == currentPlace || currentPlace <= 0 else {
                 formIndex(after: &subSequenceEnd)
@@ -127,18 +127,18 @@ public extension Collection {
             subSequenceStart = subSequenceEnd
             currentSize = 0
             currentPlaceIndex += 1
-            
+
             if currentPlaceIndex < places.count {
                 currentPlace = places[currentPlaceIndex]
             } else {
                 break
             }
         }
-        
+
         if subSequenceStart != endIndex && currentPlaceIndex < places.count {
             result.append(self[subSequenceStart..<endIndex])
         }
-        
+
         return result
     }
 }

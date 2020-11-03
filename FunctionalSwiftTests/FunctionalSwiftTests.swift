@@ -1,6 +1,6 @@
 /* The MIT License
  *
- * Copyright (c) 2007—2017 NBCO Yandex.Money LLC
+ * Copyright © 2020 NBCO YooMoney LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,23 +21,27 @@
  * THE SOFTWARE.
  */
 
-import XCTest
 import FunctionalSwift
+import XCTest
 
 class FunctionalSwiftTests: XCTestCase {
-    
+
     func testEitherOperationForTheEitherWithLeftElement() {
         let bar: Either<String, Int> = .left("foo")
-        let foo = bar.either({ "left \($0)" },
-                             { "right \($0)" })
+        let foo = bar.either(
+            { "left \($0)" },
+            { "right \($0)" }
+        )
         let expected = "left foo"
         XCTAssertEqual(foo, expected)
     }
 
     func testEitherOperationForTheEitherWithRightElement() {
         let bar: Either<String, Int> = .right(10)
-        let foo = bar.either({ "left \($0)" },
-                             { "right \($0)" })
+        let foo = bar.either(
+            { "left \($0)" },
+            { "right \($0)" }
+        )
         let expected = "right 10"
         XCTAssertEqual(foo, expected)
     }

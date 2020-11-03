@@ -1,6 +1,6 @@
 /* The MIT License
  *
- * Copyright (c) 2007—2017 NBCO Yandex.Money LLC
+ * Copyright © 2020 NBCO YooMoney LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -62,7 +62,7 @@ public func <^><T, U, Key>(_ transform: (T) -> U,
 /// - SeeAlso:
 /// `<^>` operator.
 public func <^<T, U, V>(_ transform: T, _ arg: [U: V]) -> [U: T] {
-    return { _ in transform } <^> arg
+    { _ in transform } <^> arg
 }
 
 /// Is flipped version of `<^`
@@ -70,5 +70,5 @@ public func <^<T, U, V>(_ transform: T, _ arg: [U: V]) -> [U: T] {
 /// - SeeAlso:
 /// `<^>`, `<^` operators.
 public func ^><T, U, V>(_ arg: [T: U], _ transform: V) -> [T: V] {
-    return { _ in transform} <^> arg
+    { _ in transform } <^> arg
 }

@@ -1,0 +1,1286 @@
+whitelist_rules:
+  - strict_fileprivate
+  # `fileprivate` should be avoided.
+  #  ↓fileprivate extension String {}
+  #
+  #  extension String {
+  #      ↓fileprivate func Something(){}
+  #  }
+
+  - empty_string
+  # Prefer checking `isEmpty` over comparing `string` to an empty string literal.
+  #  myString↓ == ""
+  #
+  #  myString↓ != ""
+
+  - modifier_order
+  # Modifier order should be consistent.
+  #  public class Foo {
+  #    static public let bar = 42
+  #  }
+  #
+  #  public class Foo {
+  #      static public var bar: Int {
+  #           return 42
+  #      }
+  #  }
+  #
+  #
+  #  public class Foo {
+  #      class public var bar: Int {
+  #           return 42
+  #      }
+  #  }
+  #
+  #  public class RootFoo {
+  #      class public var foo: String {
+  #          return "foo"
+  #      }
+  #  }
+
+
+
+  - unneeded_break_in_switch
+  # Avoid using unneeded break statements.
+  #  switch foo {
+  #  case .bar:
+  #    something()
+  #    ↓break
+  #  }
+
+
+
+  - switch_case_alignment
+  # Case statements should vertically align with their enclosing switch statement, or indented if configured otherwise.
+  #  switch someInt {
+  #      ↓case 0:
+  #        print('Zero')
+  #      ↓case 1:
+  #        print('One')
+  #      ↓default:
+  #        print('Some other number')
+  #  }
+  #
+  #  switch someBool {
+  #  case true:
+  #    print('red')
+  #    ↓case false:
+  #      print('blue')
+  #  }
+
+
+
+  - weak_delegate
+  # Delegates should be weak to avoid reference cycles.
+  #
+  # ↓var delegate: SomeProtocol?
+  #
+  # ↓var scrollDelegate: ScrollDelegate?
+
+
+
+  - closing_brace
+  # Closing brace with closing parenthesis should not have any whitespaces in the middle.
+  #
+  # [].map({ ↓} )
+  
+  
+  
+  - closure_end_indentation
+  # Closure end should have the same indentation as the line that started it.
+  #
+  # SignalProducer(values: [1, 2, 3])
+  #        .startWithNext { number in
+  #            print(number)
+  #     ↓}
+  #
+  # return match(pattern: pattern, with: [.comment]).flatMap { range in
+  #        return Command(string: contents, range: range)
+  #        ↓}.flatMap { command in
+  #        return command.expand()
+  #     ↓}
+  
+  
+  
+  - closure_parameter_position
+  # Closure parameters should be on the same line as opening brace.
+  #
+  # [1, 2].map {
+  #    ↓number in
+  #    number + 1
+  #  }
+  #
+  # [1, 2].map {
+  #   ↓number -> Int in
+  #   number + 1
+  # }
+  
+  
+  
+  - closure_spacing
+  # Closure expressions should have a single space inside each brace.
+  #
+  # [].filter(↓{$0.contains(location)})
+  #
+  # [].map(↓{$0})
+  
+  
+  
+  - colon
+  # Colons should be next to the identifier when specifying a type and next to the key in dictionary literals.
+  # 
+  # let ↓abc:Void
+  #
+  # let ↓abc:  Void
+  #
+  # let ↓abc :Void
+  #
+  # let ↓abc : Void
+  #
+  # let ↓abc : [Void: Void]
+  #
+  # func abc(↓def:Void) {}
+  #
+  # func abc(def: Void, ↓ghi :Void) {}
+  #
+  # let abc = [Void↓ : Void]()
+  #
+  # let abc = [Void↓:  Void]()
+  #
+  # let abc = [1: [3↓ : 2], 3: 4]
+  
+  
+  
+  - comma
+  # There should be no space before and one after any comma.
+  #
+  # func abc(a: String↓ ,b: String) { }
+  #
+  # func abc(a: String↓ ,b: String↓ ,c: String↓ ,d: String) { }
+  #
+  # enum a { case a↓ ,b }
+  #
+  # let result = plus(
+  #     first: 3↓ , // #683
+  #     second: 4
+  # )
+  
+  
+  
+  - compiler_protocol_init
+  # The initializers declared in compiler protocols such as `ExpressibleByArrayLiteral` shouldn't be called directly.
+  #
+  # let set = ↓Set(arrayLiteral: 1, 2)
+  #
+  # let set = ↓Set.init(arrayLiteral: 1, 2)
+  
+  
+  
+  - control_statement
+  # if, for, while, do, guard, switch statements shouldn't wrap their conditionals in parentheses.
+  #
+  # do { ; } ↓while (condition) {
+  #
+  # ↓switch (foo) {
+  #
+  # do { ; } ↓while(condition) {
+  #
+  # } ↓while(condition) {
+  #
+  # ↓guard (condition) else {
+  #
+  # ↓for(item in collection) {
+  #
+  # ↓if ((min...max).contains(value)) {
+  #
+  # ↓if ((a || b) && (c || d)) {
+  
+  
+  
+  - cyclomatic_complexity
+  # Complexity of function bodies should be limited.
+  #
+  # ↓func f1() {
+  #   if true {
+  #     if true {
+  #       if false {}
+  #     }
+  #   }
+  #   if false {}
+  #   let i = 0
+  #   switch i {
+  #   case 1: break
+  #   case 2: break
+  #   case 3: break
+  #   case 4: break
+  #   default: break
+  #   }
+  #   for _ in 1...5 {
+  #     guard true else {
+  #       return
+  #     }
+  #   }
+  # }
+  
+  
+  - discarded_notification_center_observer
+  # When registing for a notification using a block, the 
+  # opaque observer that is returned should be stored so it 
+  # can be removed later.
+  #
+  # ↓nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil) { }
+  #
+  # ↓nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { })
+  
+  
+  
+  - dynamic_inline
+  # Avoid using 'dynamic' and '@inline(__always)' together.
+  #
+  # class C {
+  # @inline(__always) dynamic ↓func f() {}
+  # }
+  #
+  # class C {
+  # @inline(__always) public dynamic ↓func f() {}
+  # }
+  #
+  # class C {
+  # @inline(__always) dynamic internal ↓func f() {}
+  # }
+  #
+  # class C {
+  # @inline(__always)
+  # dynamic ↓func f() {}
+  # }
+  #
+  # class C {
+  # @inline(__always)
+  # dynamic
+  # ↓func f() {}
+  # }
+  
+  
+  
+  - empty_count
+  # Prefer checking `isEmpty` over comparing `count` to zero.
+  #
+  # [Int]().↓count == 0
+  #
+  # [Int]().↓count > 0
+  #
+  # [Int]().↓count != 0
+  
+  
+  
+  - empty_parameters
+  # Prefer `() -> ` over `Void -> `.
+  #
+  # let abc: ↓Void -> Void = {}
+  #
+  # func foo(completion: ↓Void -> Void)
+  #
+  # func foo(completion: ↓Void throws -> Void)
+  #
+  # let foo: ↓Void -> () throws -> Void)
+  
+  
+  
+  - empty_parentheses_with_trailing_closure
+  # When using trailing closures, empty parentheses should be 
+  # avoided after the method call.
+  #
+  # [1, 2].map↓() { $0 + 1 }
+  #
+  # [1, 2].map↓( ) { $0 + 1 }
+  #
+  # [1, 2].map↓() { number in
+  #   number + 1
+  # }
+  #
+  # [1, 2].map↓(  ) { number in
+  #   number + 1
+  # }
+  
+  
+  
+  - explicit_init
+  # Explicitly calling .init() should be avoided.
+  #
+  # [1].flatMap{String↓.init($0)}
+  #
+  # [String.self].map { Type in Type↓.init(1) }
+  
+  
+  
+  - fatal_error_message
+  # A fatalError call should have a message.
+  #
+  # func foo() {
+  #   ↓fatalError("")
+  # }
+  #
+  # func foo() {
+  #   ↓fatalError()
+  # }
+
+  
+  
+  - first_where
+  # Prefer using `.first(where:)` over `.filter { }.first` in collections.
+  #
+  # ↓myList.filter { $0 % 2 == 0 }.first
+  #
+  # ↓myList.filter({ $0 % 2 == 0 }).first
+  #
+  # ↓myList.map { $0 + 1 }.filter({ $0 % 2 == 0 }).first
+  #
+  # ↓myList.map { $0 + 1 }.filter({ $0 % 2 == 0 }).first?.something()
+  #
+  # ↓myList.filter(someFunction).first
+  #
+  # ↓myList.filter({ $0 % 2 == 0 })
+  # .first
+  
+  
+  
+  - for_where
+  # `where` clauses are preferred over a single `if` inside a `for`.
+  #
+  # for user in users {
+  #   ↓if user.id == 1 { return true }
+  # }
+  
+  
+  
+  - force_cast
+  # Force casts should be avoided.
+  #
+  # NSNumber() ↓as! Int
+  
+  
+  
+  - force_try
+  # Force tries should be avoided.
+  #
+  # func a() throws {}; ↓try! a()
+  
+  
+  
+  - force_unwrapping
+  # Force unwrapping should be avoided.
+  #
+  # let url = NSURL(string: query)↓!
+  #
+  # navigationController↓!.pushViewController(viewController, animated: true)
+  #
+  # let unwrapped = optional↓!
+  #
+  # return cell↓!
+  #
+  # let url = NSURL(string: "http://www.google.com")↓!
+  #
+  # let dict = ["Boooo": "👻"]func bla() -> String { return dict["Boooo"]↓! }
+  
+  
+  
+  - generic_type_name
+  # Generic type name should only contain alphanumeric characters, start with an uppercase character and span between 1 and 20 characters in length.
+  #
+  # func foo<↓T_Foo>() {}
+  #
+  # func foo<↓TTTTTTTTTTTTTTTTTTTTT>() {}
+  #
+  # func foo<↓type>() {}
+  
+
+
+  - implicit_getter
+  # Computed read-only properties should avoid using the get keyword.
+  #
+  # class Foo {
+  #   var foo: Int {
+  #     ↓get {
+  #       return 20
+  #     }
+  #   }
+  # }
+
+
+
+  - large_tuple
+  # Tuples shouldn't have too many members. Create a custom type instead.
+  #
+  # ↓let foo: (Int, Int, Int)
+  #
+  # func foo(↓bar: (Int, Int, Int))
+  #
+  # func foo() -> ↓(Int, Int, Int)
+  #
+  # func foo() throws -> ↓(Int, ↓(String, String, String), Int) {}
+  #
+  # func getDictionaryAndInt() -> (Dictionary<Int, ↓(String, String, String)>, Int)?
+  
+  
+  
+  - leading_whitespace
+  # Files should not contain leading whitespace.
+  
+  
+  
+  - legacy_cggeometry_functions
+  # Struct extension properties and methods are preferred over legacy functions
+  #
+  # ↓CGRectGetWidth(rect)
+  #
+  # ↓CGRectIsNull(rect)
+  #
+  # ↓CGRectIntersectsRect(rect1, rect2)
+  
+  
+  
+  - legacy_constant
+  # Struct-scoped constants are preferred over legacy global constants.
+  #
+  # ↓CGRectInfinite
+  #
+  # ↓CGSizeZero
+  #
+  # ↓CGRectNull
+  #
+  # ↓CGFloat(M_PI)
+  
+  
+  
+  - legacy_constructor
+  # Swift constructors are preferred over legacy convenience functions.
+  #
+  # ↓CGPointMake(10, 10)
+  #
+  # ↓CGSizeMake(aWidth, aHeight)
+  #
+  # ↓NSMakeRect(xVal, yVal, width, height)
+  #
+  # ↓NSEdgeInsetsMake(top, left, bottom, right)  
+  
+  
+  
+  - line_length
+  # Lines should not span too many characters.
+  
+  
+  
+  - mark
+  # MARK comment should be in valid format.
+  #
+  # ↓//MARK: bad
+  #
+  # ↓//  MARK: bad
+  #
+  # ↓// MARK:  bad
+  #
+  # ↓// MARK:bad
+  #
+  # ↓// MARK: -bad
+  #
+  # ↓//MARK: - bad
+  #
+  # ↓//MARK:- bad
+
+  
+  
+  - nesting
+  # Types should be nested at most 1 level deep, and statements should be nested at most 5 levels deep.
+  #
+  # class A { class B { ↓class C {} } }
+  #
+  # struct A { struct B { ↓struct C {} } }
+  #
+  # enum A { enum B { ↓enum C {} } }
+  #
+  # func func0() {
+  #   func func1() {
+  #     func func2() {
+  #       func func3() {
+  #         func func4() { 
+  #           func func5() {
+  #             ↓func func6() {
+  #             }
+  #           }
+  #         }
+  #       }
+  #     }
+  #   }
+  # }
+  
+  
+  
+  # - opening_brace
+  # Opening braces should be preceded by a single space and on the same line as the declaration.
+  #
+  # func abc(↓){
+  # }
+  #
+  # func abc()↓
+  #   { }
+  # 
+  # [].map(↓){ $0 }
+  # 
+  # [].map↓( { } )
+  #
+  # if let a = b{ }
+  #
+  # while a == b{ }
+  #
+  # guard let a = b else{ }
+  
+  
+  
+  - operator_usage_whitespace
+  # Operators should be surrounded by a single whitespace when they are being used.
+  #
+  # let foo = 1↓+2
+  #
+  # let foo = 1↓   + 2
+  #
+  # let foo = 1↓   +    2
+  #
+  # let foo = 1↓ +    2
+  #
+  # let foo↓=1↓+2
+  #
+  # let foo = bar↓??0
+  
+  
+  
+  - operator_whitespace
+  # Operators should be surrounded by a single whitespace when defining them.
+  #
+  # ↓func <|(lhs: Int, rhs: Int) -> Int {}
+  #
+  # ↓func <|<<A>(lhs: A, rhs: A) -> A {}
+  #
+  # ↓func <|  (lhs: Int, rhs: Int) -> Int {}
+  
+  
+  
+  - redundant_discardable_let
+  # Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function.
+  #
+  # ↓let _ = foo()
+  #
+  # if _ = foo() { ↓let _ = bar() }
+  
+  
+  
+  - redundant_nil_coalescing
+  # nil coalescing operator is only evaluated if the lhs is nil, coalescing operator with nil as rhs is redundant
+  #
+  # - var myVar: Int? = nil
+  # myVar↓ ?? nil
+  
+  
+  
+  - redundant_optional_initialization
+  # Initializing an optional variable with nil is redundant.
+  #
+  # var myVar: Int?↓ = nil
+  #
+  # var myVar: Optional<Int>↓ = nil
+  #
+  # var myVar: Int?↓=nil
+  #
+  # var myVar: Optional<Int>↓=nil
+  
+  
+  
+  - redundant_string_enum_value
+  # String enum values can be omitted when they are equal to the enumcase name.
+  #
+  # enum Numbers: String {
+  #   case one = ↓"one"
+  #   case two = ↓"two"
+  # }
+  #
+  # enum Numbers: String {
+  #   case one = ↓"one", two = ↓"two"
+  # }
+  
+  
+  
+  - redundant_void_return
+  # Returning Void in a function declaration is redundant.
+  #
+  # func foo()↓ -> Void {}
+  #
+  # protocol Foo {
+  #   func foo()↓ -> Void
+  # }
+  #
+  # func foo()↓ -> () {}
+  #
+  # protocol Foo {
+  #   func foo()↓ -> ()
+  # }
+  
+  
+  
+  - return_arrow_whitespace
+  # Return arrow and return type should be separated by a single space or on a separate line.
+  #
+  # func abc()↓->Int {}
+  #
+  # func abc()↓->[Int] {}
+  #
+  # func abc()↓->(Int, Int) {}
+  #
+  # func abc()↓-> Int {}
+  #
+  # func abc()↓ ->Int {}
+  #
+  # var abc = {(param: Int)↓ ->Bool in }
+  #
+  # var abc = {(param: Int)↓->Bool in }
+  
+  
+  
+  - shorthand_operator
+  # Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning.
+  #
+  # ↓foo = foo - 1
+  #
+  # ↓foo = foo - aVariable
+  #
+  # ↓foo = foo - bar.method()
+  #
+  # ↓foo.aProperty = foo.aProperty - 1
+  
+  
+  
+  - sorted_imports
+  # Imports should be sorted.
+  #
+  # import AAA
+  # import ZZZ
+  # import ↓BBB
+  # import CCC
+  
+  
+  
+  - statement_position
+  # Else and catch should be on the same line, one space after the previous declaration.
+  #
+  # ↓}else if {
+  #
+  # ↓}  else {
+  #
+  # ↓}
+  # catch {
+  #
+  # ↓}
+  #     catch {
+  
+  
+  
+  - syntactic_sugar
+  # Shorthand syntactic sugar should be used, i.e. [Int] instead of Array<Int>
+  #
+  # let x: ↓Array<String>
+  #
+  # let x: ↓Dictionary<Int, String>
+  #
+  # let x: ↓Optional<Int>
+  #
+  # let x: ↓ImplicitlyUnwrappedOptional<Int>
+  
+  
+  
+  - trailing_comma
+  # Multi-line collection literals should have trailing commas
+  
+  
+  
+  - trailing_newline
+  # Files should have a single trailing newline.
+  
+  
+  
+  - trailing_semicolon
+  # Lines should not have trailing semicolons.
+  #
+  # let a = 0↓
+  
+  
+  
+  - trailing_whitespace
+  # Lines should not have trailing whitespace.
+  
+  
+  
+  - type_name
+  # Type name should only contain alphanumeric characters, start with an uppercase character and span between 3 and 40 characters in length.
+  
+  
+
+  - unused_enumerated
+  # When the index or the item is not used, `.enumerated()` can be removed.
+  #
+  # for (↓_, foo) in bar.enumerated() { }
+  #
+  # for (↓_, foo) in abc.bar.enumerated() { }
+  #
+  # for (↓_, foo) in abc.something().enumerated() { }
+  #
+  # for (idx, ↓_) in bar.enumerated() { }
+  
+  
+  
+  - unused_optional_binding
+  # Prefer `!= nil` over `let _ =`
+  #
+  # if let ↓_ = Foo.optionalValue { }
+  #
+  # if let a = Foo.optionalValue, let ↓_ = Foo.optionalValue2 { }
+  #
+  # if let ↓(_, _, _) = getOptionalTuple(), let bar = Foo.optionalValue { }
+  #
+  # guard let a = Foo.optionalValue, let ↓_ = Foo.optionalValue2 { }
+
+  
+  
+  - vertical_parameter_alignment
+  # Function parameters should be aligned vertically if they're in multiple lines in a declaration.
+  #
+  # func validateFunction(_ file: File, kind: SwiftDeclarationKind,
+  #                    ↓dictionary: [String: SourceKitRepresentable]) { }
+  #
+  # func validateFunction(_ file: File, kind: SwiftDeclarationKind,
+  #                        ↓dictionary: [String: SourceKitRepresentable]) { }
+  #
+  # func validateFunction(_ file: File,
+  #                   ↓kind: SwiftDeclarationKind,
+  #                   ↓dictionary: [String: SourceKitRepresentable]) { }
+  
+  
+  
+  - vertical_whitespace
+  # Limit vertical whitespace to a single empty line.
+  
+  
+  
+  - void_return
+  # Prefer `-> Void` over `-> ()`.
+  #
+  # let abc: () -> ↓() = {}
+  #
+  # func foo(completion: () -> ↓())
+  #
+  # func foo(completion: () -> ↓(   ))
+  #
+  # let foo: (ConfigurationTests) -> () throws -> ↓())
+
+
+
+  - legacy_hashing
+  # Prefer using the `hash(into:)` function instead of overriding `hashValue`
+  # struct Foo: Hashable {
+  #    let bar: Int = 10
+  #
+  #    public ↓var hashValue: Int {
+  #        return bar
+  #    }
+  #}
+
+
+
+  - last_where
+  # Prefer using `.last(where:)` over `.filter { }.last` in collections.
+  # ↓myList.filter { $0 % 2 == 0 }.last
+  #
+  # ↓myList.filter({ $0 % 2 == 0 }).last
+  #
+  # ↓myList.map { $0 + 1 }.filter({ $0 % 2 == 0 }).last
+
+
+
+  - trailing_closure
+  # Trailing closure syntax should be used whenever possible.
+  #  ↓foo.map({ $0 + 1 })
+  #
+  #  ↓foo.reduce(0, combine: { $0 + 1 })
+  #
+  #  ↓offsets.sorted(by: { $0.offset < $1.offset })
+
+
+
+  - legacy_random
+  # Prefer using `type.random(in:)` over legacy functions.
+  # instead of arc4random, arc4random_uniform, and drand48.
+  #  ↓arc4random(10)
+  #
+  #  ↓arc4random_uniform(83)
+  #
+  #  ↓drand48(52)
+
+
+
+  - inert_defer
+  # If defer is at the end of its parent scope, it will be executed right where it is anyway.
+  #   func example0() {
+  #      ↓defer { /* deferred code */ }
+  #   }
+  #
+  #  func example1() {
+  #    ↓defer { /* deferred code */ }
+  #      // comment
+  #  }
+  #
+  #  func example2() {
+  #      if condition {
+  #          ↓defer { /* deferred code */ }
+  #          // comment
+  #      }
+  #  }
+
+
+
+  - toggle_bool
+  # Prefer `someBool.toggle()` over `someBool = !someBool`.
+  #  ↓someBool = !someBool. Requires Swift 4.2.
+
+
+
+  - identical_operands
+  # Comparing two identical operands is likely a mistake.
+  #  ↓self.aProperty == aProperty
+  #
+  #  ↓lhs.aProperty == rhs.aProperty
+
+
+
+  - collection_alignment
+  # All elements in a collection literal should be vertically aligned
+  #  let abc = [
+  #      "alpha": "a",
+  #       ↓"beta": "b",
+  #      "gamma": "g",
+  #      "delta": "d",
+  #    ↓"epsilon": "e"
+  #  ]
+
+
+
+  #  let meals = [
+  #      "breakfast": "oatmeal",
+  #      "lunch": "sandwich",
+  #         ↓"dinner": "burger"
+  #  ]
+
+
+
+  - redundant_objc_attribute
+  #   Objective-C attribute (@objc) is redundant in declaration.
+  #  @objc
+  #  extension Foo {
+  #      ↓@objc
+  #      var bar: Int {
+  #          return 0
+  #      }
+  #  }
+
+
+
+  - unused_control_flow_label
+  # Unused control flow label should be removed.
+  #  ↓loop: for x in array { break }
+  #
+  #  ↓label: switch number {
+  #  case 1: print("1")
+  #  case 2: print("2")
+  #  default: break
+  #  }
+
+
+
+  - deployment_target
+  # Availability checks or attributes shouldn't be using older versions that are satisfied by the deployment target.
+  #  ↓@available(iOS 6.0, macOS 10.12, *)
+  #  class A {}
+  #
+  #  if ↓#available(iOS 6.0, *) {}
+
+
+
+  - nsobject_prefer_isequal
+  # NSObject subclasses should implement isEqual instead of ==.
+  #  class AClass: NSObject {
+  #      override func isEqual(_ object: Any?) -> Bool {
+  #          guard let other = object as? AClass else {
+  #              return false
+  #          }
+  #          return true
+  #      }
+  #
+  #      ↓static func ==(lhs: AClass, rhs: AClass) -> Bool {
+  #          return false
+  #      }
+  #  }
+
+
+
+  - contains_over_first_not_nil
+  # Prefer `contains` over `first(where:) != nil` and `firstIndex(where:) != nil`.
+  #  ↓myList.first { $0 % 2 == 0 } != nil
+  #
+  #  ↓myList.first(where: { $0 % 2 == 0 }) != nil
+  #
+  #  ↓myList.map { $0 + 1 }.first(where: { $0 % 2 == 0 }) != nil
+
+
+
+  - unused_capture_list
+  # Unused reference in a capture list should be removed.
+  #  [1, 2].map { [↓weak self] num in
+  #      print(num)
+  #  }
+  #
+  #  let failure: Failure = { [weak self, ↓unowned delegate = self.delegate!] foo in
+  #      self?.handle(foo)
+  #  }
+
+
+
+  - unowned_variable_capture
+  # Prefer capturing references as weak to avoid potential crashes.
+  #  foo { [↓unowned self] in _ }
+  #
+  #  foo { [↓unowned bar] in _ }
+  #
+  #  foo { [bar, ↓unowned self] in _ }
+
+
+
+  - duplicate_enum_cases
+  # Enum can't contain multiple cases with the same name.
+  #  enum PictureImport {
+  #  case ↓add(image: UIImage)
+  #  case addURL(url: URL)
+  #  case ↓add(data: Data)
+  #  }
+
+
+
+  - legacy_multiple
+  # Prefer using the `isMultiple(of:)` function instead of using the remainder operator (`%`).
+  #  cell.contentView.backgroundColor = indexPath.row ↓% 2 != 0 ? .gray: .white
+  #
+  #  guard count ↓% 2 == 0 else { throw DecodingError.dataCorrupted(...) }
+
+
+
+  - unused_declaration
+  # Declarations should be referenced at least once within all files linted.
+  #  struct Item {}
+  #  struct ↓ResponseModel: Codable {
+  #      let ↓items: [Item]
+  #
+  #      enum ↓CodingKeys: String {
+  #          case items = "ResponseItems"
+  #      }
+  #  }
+
+
+
+  - no_space_in_method_call
+  # Don't add a space between the method name and the parentheses.
+  #  object.foo↓ (value: 1)
+  #
+  #  object.foo↓ () {}
+  #
+  #  object.foo↓     ()
+
+
+
+  - contains_over_filter_count
+  # Prefer `contains` over comparing `filter(where:).count` to 0.
+  #  let result = ↓myList.filter(where: { $0 % 2 == 0 }).count > 0
+  #
+  #  let result = ↓myList.filter { $0 % 2 == 0 }.count > 0
+
+
+
+  - contains_over_filter_is_empty
+  # Prefer `contains` over using `filter(where:).isEmpty`
+  #  let result = ↓myList.filter(where: { $0 % 2 == 0 }).isEmpty
+  #
+  #  let result = !↓myList.filter(where: { $0 % 2 == 0 }).isEmpty
+
+
+
+  - empty_collection_literal
+  # Prefer checking `isEmpty` over comparing collection to an empty array or dictionary literal.
+  #  myArray↓ == []
+  #
+  #  myArray↓ != []
+  #
+  #  myArray↓ == [ ]
+  #
+  #  myDict↓ == [:]
+
+
+
+#  - valid_ibinspectable
+#  # @IBInspectable should be applied to variables only, have its type explicit and be of a supported type
+#  #
+#  # @IBInspectable private ↓let count: Int
+#  #
+#  # @IBInspectable private ↓var count = 0
+#  #
+#  # @IBInspectable private ↓var count: Int?
+#  #
+#  # @IBInspectable private ↓var x: ImplicitlyUnwrappedOptional<Int>
+
+
+
+#  - private_outlet
+#  # IBOutlets should be private to avoid leaking UIKit to higher layers.
+#  #
+#  # class Foo {
+#  #   @IBOutlet ↓var label: UILabel?
+#  # }
+
+
+
+#  - missing_docs
+#  # Public declarations should be documented.
+#  #
+#  # ↓public func a() {}
+#  #
+#  # ↓// regular comment
+#  # public func a() {}
+#  #
+#  # ↓/* regular comment */
+#  # public func a() {}
+#  #
+#  # /// docs
+#  # public protocol A {
+#  # ↓// no docs
+#  # var b: Int { get } }
+#  # /// docs
+#  # public struct C: A {
+#  #
+#  # ↓public let b: Int
+#  # }
+
+
+
+#  - implicitly_unwrapped_optional
+#  # Implicitly unwrapped optionals should be avoided when possible.
+#  #
+#  # let label: UILabel!
+#  #
+#  # let IBOutlet: UILabel!
+#  #
+#  # let labels: [UILabel!]
+#  #
+#  # var ints: [Int!] = [42, nil, 42]
+#  #
+#  # let label: IBOutlet!
+
+
+
+#  - identifier_name
+#  # Identifier names should only contain alphanumeric characters and start with a lowercase character or should only contain capital letters. In an exception to the above, variable names may start with a capital letter when they are declared static and immutable. Variable names should not be too long or too short.
+#  #
+#  # ↓let MyLet = 0
+#  #
+#  # ↓let _myLet = 0
+#  #
+#  # private ↓let myLet_ = 0
+#  #
+#  # ↓let myExtremelyVeryVeryVeryVeryVeryVeryLongLet = 0
+#  #
+#  # ↓let i = 0
+#  #
+#  # enum Foo { case ↓MyEnum }
+#  #
+#  # ↓func IsOperator(name: String) -> Bool
+#  #
+#  # private ↓let _i = 0
+
+
+
+#  - function_body_length
+#  # Functions bodies should not span too many lines.
+
+
+
+#  - function_parameter_count
+#  # Number of function parameters should be low.
+#  #
+#  # ↓func f(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int) {}
+#  #
+#  # ↓func initialValue(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int) {}
+#  #
+#  # ↓func f(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int = 2, g: Int) {}
+#  #
+#  # struct Foo {
+#  #   init(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int) {}
+#  #   ↓func bar(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int) {}
+#  # }
+
+
+
+#  - file_length
+#  # Files should not span too many lines.
+
+
+
+#  - nslocalizedstring_require_bundle
+# rule to ensure calls to
+# NSLocalizedString specify the bundle where the strings file is located.
+
+
+
+#  - vertical_whitespace_opening_braces
+# opt-in rule to warn against empty
+# lines after opening braces.
+
+
+
+#  - vertical_whitespace_between_cases
+#   opt-in rule to enforce a single
+#  empty line between switch cases.
+
+
+
+#  - vertical_whitespace_closing_braces
+# opt-in rule to warn against empty
+# lines before closing braces.
+
+
+
+#  - required_deinit
+# opt-in rule to ensure that all classes have a deinit
+# method. The purpose of this is to make memory leak debugging easier so all
+# classes have a place to set a breakpoint to track deallocation.
+
+
+
+#  - file_types_order
+# to specify how the types in a file
+# should be sorted.
+
+
+
+#  - type_contents_order
+# to specify the order of subtypes,
+# properties, methods & more within a type.
+
+
+
+#  - static_operator
+# opt-in rule to enforce that operators are declared as
+# static functions instead of free functions.
+#  ------
+
+
+
+#  - reduce_into
+# opt-in rule to encourage the use of reduce(into:_:)
+# instead of reduce(_:_:) which is less performant.
+
+
+
+#  - nimble_operator
+# now warns about beTrue() and beFalse().
+
+
+
+#  - reduce_boolean
+# rule to prefer simpler constructs over reduce(Boolean).
+
+
+
+#  - strong_iboutlet
+# opt-in rule to enforce that @IBOutlets are not
+# declared as weak.
+
+
+
+#  - duplicate_imports
+# rule to prevent importing the same module twice.
+
+
+
+#  - unused_setter_value
+# rule to validate that setter arguments are
+# used in properties.
+
+
+
+#  - multiline_arguments_brackets
+#   opt-in rule to warn against multiline
+#  function call arguments with surrounding brackets without newline.
+
+
+
+#  - multiline_literal_brackets
+#   opt-in rule to warn against multiline
+#  literal arrays & dictionaries with surrounding brackets without newline.
+
+
+
+#  - multiline_parameters_brackets
+#   opt-in rule to warn against multiline
+#  function definition parameters with surrounding brackets without newline.
+
+
+
+#  - closure_body_length
+# opt-in rule to enforce the maximum number
+# of lines a closure should have. Requires Swift 4.2.
+
+
+
+#  - prohibited_interface_builder
+# opt-in rule to validate that @IBOutlets
+# and @IBActions are not used.
+
+#  - xct_specific_matcher
+  # opt-in rule to enforce specific matchers
+  # over XCTAssertEqual and XCTAssertNotEqual.
+
+
+
+file_length: 500
+function_body_length: 40
+identifier_name:
+  min_length: 2
+  max_length: 20
+large_tuple: 3
+line_length: 
+  warning: 120
+  ignores_urls: true
+# statement_position: 
+#   statement_mode: "uncuddled_else"
+trailing_comma:
+  mandatory_comma: true
+trailing_closure:
+  only_single_muted_parameter: true
+vertical_whitespace:
+  max_empty_lines: 1
+nesting:
+  type_level: 5
+  statement_level: 5
+type_name:
+  max_length: 1000
+cyclomatic_complexity: 11
+deployment_target:
+  iOS_deployment_target": 11
+  
+excluded:
+  - Pods
+  - .idea
+  - ./*/Mock/GeneratedMocks.swift
+  - Carthage

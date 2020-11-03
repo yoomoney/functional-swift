@@ -1,6 +1,6 @@
 /* The MIT License
  *
- * Copyright (c) 2007—2019 NBCO Yandex.Money LLC
+ * Copyright © 2020 NBCO YooMoney LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,6 +22,8 @@
  */
 
 import Darwin
+
+// swiftlint:disable force_unwrapping
 
 /// An `MVar` (pronounced "em-var") is a synchronising variable, used for communication between concurrent threads.
 /// It can be thought of as a box, which may be empty or full.
@@ -238,3 +240,5 @@ public final class MVar<A> {
         return value
     }
 }
+
+// swiftlint:enable force_unwrapping

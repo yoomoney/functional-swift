@@ -3,7 +3,7 @@
 <!--
    The MIT License
 
-   Copyright (c) 2007—2017 NBCO Yandex.Money LLC
+   Copyright © 2020 NBCO YooMoney LLC
 
    Permission is hereby granted, free of charge, to any person obtaining a copy
    of this software and associated documentation files (the "Software"), to deal
@@ -42,7 +42,7 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2017 Yandex.Money. All rights reserved.</string>
+	<string>Copyright © 2020 NBCO YooMoney LLC</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
 </dict>

@@ -1,6 +1,6 @@
 /* The MIT License
  *
- * Copyright (c) 2007—2017 NBCO Yandex.Money LLC
+ * Copyright © 2020 NBCO YooMoney LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -376,7 +376,7 @@ public func liftA2<T, U, V, W>(_ transform: (T, U) -> V,
     case (_, .left(let left2)):
         return .left(left2)
     default:
-        fatalError()
+        fatalError("Unexpected case")
     }
 }
 
@@ -403,7 +403,7 @@ public func liftA3<T, U, V, W, X>(_ transform: (T, U, V) -> W,
     case (_, _, .left(let left3)):
         return .left(left3)
     default:
-        fatalError()
+        fatalError("Unexpected case")
     }
 }
 

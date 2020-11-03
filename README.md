@@ -1,4 +1,4 @@
-Yandex Money Functional Swift library
+YooMoney Functional Swift library
 
 # Functor
 
