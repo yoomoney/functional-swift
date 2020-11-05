@@ -1,6 +1,6 @@
 /* The MIT License
  *
- * Copyright (c) 2007—2017 NBCO Yandex.Money LLC
+ * Copyright © 2020 NBCO YooMoney LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -115,8 +115,8 @@ public func -<<<T, U>(_ transform: (T) -> U?, _ arg: T?) -> U? {
 ///     - arg: Wrapped argument.
 /// - Returns: `some` if the function and the argument is `some`,
 ///     otherwise `none`.
-public func <*><T, U>(_ transform: Optional<(T) -> U>,
-                      arg: Optional<T>) -> Optional<U> {
+public func <*><T, U>(_ transform: ((T) -> U)?,
+                      arg: T?) -> U? {
     switch (transform, arg) {
     case (.some(let transform), .some(let arg)):
         return transform(arg)
@@ -142,8 +142,8 @@ public func <*><T, U>(_ transform: Optional<(T) -> U>,
 ///     - arg2: The second argument.
 /// - Returns: `some` when both arguments are `some`, otherwise `none`.
 public func liftA2<T, U, V>(_ transform: (T, U) -> V,
-                            _ arg1: Optional<T>,
-                            _ arg2: Optional<U>) -> Optional<V> {
+                            _ arg1: T?,
+                            _ arg2: U?) -> V? {
     switch (arg1, arg2) {
     case (.some(let arg1), .some(let arg2)):
         return transform(arg1, arg2)
@@ -165,9 +165,9 @@ public func liftA2<T, U, V>(_ transform: (T, U) -> V,
 ///     - arg3: The third argument.
 /// - Returns: `some` when all arguments are `some`, otherwise `none`.
 public func liftA3<T, U, V, W>(_ transform: (T, U, V) -> W,
-                               _ arg1: Optional<T>,
-                               _ arg2: Optional<U>,
-                               _ arg3: Optional<V>) -> Optional<W> {
+                               _ arg1: T?,
+                               _ arg2: U?,
+                               _ arg3: V?) -> W? {
     switch (arg1, arg2, arg3) {
     case (.some(let arg1), .some(let arg2), .some(let arg3)):
         return transform(arg1, arg2, arg3)

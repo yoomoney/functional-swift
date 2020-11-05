@@ -87,7 +87,6 @@ infix operator <^ : FunctorSequencePrecedence
 /// Replace Backwards | Maps all the values encapsulated by a functor to a user-specified constant.
 infix operator ^> : FunctorSequencePrecedence
 
-
 /// Ap | Applies a function encapsulated by a functor to the value encapsulated by another functor.
 infix operator <*> : FunctorPrecedence
 

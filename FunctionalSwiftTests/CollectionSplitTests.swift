@@ -1,6 +1,6 @@
 /* The MIT License
  *
- * Copyright (c) 2007—2017 NBCO Yandex.Money LLC
+ * Copyright © 2020 NBCO YooMoney LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -54,11 +54,11 @@ class CollectionSplitTests: XCTestCase {
         XCTAssert(data.chunks(of: 10).elementsEqual([[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]], by: ==))
         XCTAssert(data.chunks(of: 11).elementsEqual([[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]], by: ==))
     }
-    
+
     func testSplitPlaces() {
         XCTAssert(emptyData.split(places: [5]).elementsEqual([], by: ==))
         XCTAssert(data.split(places: [-5]).elementsEqual([[]], by: ==))
-        
+
         XCTAssert(data.split(places: [2, -3, 4]).elementsEqual([[1, 2], [], [3, 4, 5, 6]], by: ==))
         XCTAssert(data.split(places: [2, 0, 4]).elementsEqual([[1, 2], [], [3, 4, 5, 6]], by: ==))
         XCTAssert(data.split(places: [2, 3, 5]).elementsEqual([[1, 2], [3, 4, 5], [6, 7, 8, 9, 0]], by: ==))

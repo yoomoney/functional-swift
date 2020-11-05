@@ -1,6 +1,6 @@
 /* The MIT License
  *
- * Copyright (c) 2007—2017 NBCO Yandex.Money LLC
+ * Copyright © 2020 NBCO YooMoney LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,9 +21,9 @@
  * THE SOFTWARE.
  */
 
-import Quick
-import Nimble
 import FunctionalSwift
+import Nimble
+import Quick
 
 class PreludeSpec: QuickSpec {
     override func spec() {
@@ -37,7 +37,7 @@ class PreludeSpec: QuickSpec {
                 expect(id(c)).to(equal(c))
             }
         }
-        
+
         describe("Const function") {
             it("returns a function that always returns the same value") {
                 let a = "Test"
@@ -46,37 +46,43 @@ class PreludeSpec: QuickSpec {
                 expect(const(a)(true)).to(equal(a))
             }
         }
-        
+
         describe("Function composition") {
             it("must return (A) -> C for (B) -> C and (A) -> B arguments") {
+
+                // swiftlint:disable type_name
                 struct A {}
+
                 struct B {}
+
                 struct C {}
-                
+
+                // swiftlint:enable type_name
+
                 let kind = ((A) -> C).self
-                
-                let bc: (B) -> C = { _ in return C() }
-                let ab: (A) -> B = { _ in return B() }
+
+                let bc: (B) -> C = { _ in C() }
+                let ab: (A) -> B = { _ in B() }
                 expect(bc • ab).to(beAKindOf(kind))
             }
-            
+
             context("that takes arguments bc and ab") {
                 it("must first apply to the argument ab, then bc") {
                     let bc = { $0 * 2 }
                     let ab = { $0 + 2 }
-                    
+
                     let a = 5
                     let c = bc(ab(5))
                     expect((bc • ab)(a)).to(equal(c))
                 }
             }
         }
-        
+
         describe("Application operator") {
             it("apply function to argument") {
                 let a: (Int) -> Int = { $0 * 2 }
                 let b = 5
-                
+
                 expect(a <| b).to(equal(a(b)))
                 expect(b |> a).to(equal(a(b)))
             }

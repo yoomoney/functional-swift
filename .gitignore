@@ -36,8 +36,8 @@ Pods/
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 Carthage/Checkouts
-
 Carthage/Build
+Carthage/.DS_Store
 
 # fastlane
 #
@@ -56,3 +56,4 @@ fastlane/test_output
 
 build/
 docs/undocumented.json
+.DS_Store
