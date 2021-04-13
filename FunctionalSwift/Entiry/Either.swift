@@ -61,6 +61,7 @@
 ///     Either<String, Int> = right {
 ///         right = 6
 ///     }
+@frozen
 public enum Either<L, R> {
     /// Left value of `Either`.
     ///
