@@ -410,10 +410,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 244F7FF04612350F73F67F1C /* Build configuration list for PBXNativeTarget "FunctionalSwift-iOS" */;
 			buildPhases = (
+				C77292B72AED253110D6021D /* Timing START */,
 				244F76F82590117B37A1B649 /* Sources */,
 				244F752F9AB6097D2E1E918A /* Frameworks */,
 				244F77BCF9CB827554FCE4C8 /* Headers */,
 				244F78A0F8E029B5EB9BBDC1 /* Resources */,
+				CA744D71C6D4E7B11DF2C535 /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -428,10 +430,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E04EB1031F5567B700D08B5D /* Build configuration list for PBXNativeTarget "FunctionalSwift-watchOS" */;
 			buildPhases = (
+				12290450B600A528BEDD1CC0 /* Timing START */,
 				E04EB0F91F5567B700D08B5D /* Sources */,
 				E04EB0FA1F5567B700D08B5D /* Frameworks */,
 				E04EB0FB1F5567B700D08B5D /* Headers */,
 				E04EB0FC1F5567B700D08B5D /* Resources */,
+				C57A1C13CC1BAE40EB7BDAFA /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -446,10 +450,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E04EB1101F5567F600D08B5D /* Build configuration list for PBXNativeTarget "FunctionalSwift-macOS" */;
 			buildPhases = (
+				5FE04F85DD4FA1DF6737673B /* Timing START */,
 				E04EB1061F5567F600D08B5D /* Sources */,
 				E04EB1071F5567F600D08B5D /* Frameworks */,
 				E04EB1081F5567F600D08B5D /* Headers */,
 				E04EB1091F5567F600D08B5D /* Resources */,
+				1B48112374B07E8D331A4B8A /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -464,10 +470,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E064759F1FCED8DF002BF3FB /* Build configuration list for PBXNativeTarget "FunctionalSwiftTests" */;
 			buildPhases = (
+				071B865230D984EB365E22DF /* Timing START */,
 				E06475941FCED8DF002BF3FB /* Frameworks */,
 				E06475931FCED8DF002BF3FB /* Sources */,
 				E06475951FCED8DF002BF3FB /* Resources */,
 				E06475A41FCED90B002BF3FB /* CopyFiles */,
+				C97A3CAA976FC7BE546FA68B /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -485,10 +493,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0E34A9C24D8066A00FD0E85 /* Build configuration list for PBXNativeTarget "FunctionalSwiftExample" */;
 			buildPhases = (
+				209B90D5BDB7AE0BF17BC804 /* Timing START */,
 				E0E34A8524D8066900FD0E85 /* Sources */,
 				E0E34A8624D8066900FD0E85 /* Frameworks */,
 				E0E34A8724D8066900FD0E85 /* Resources */,
 				E0E34AC324D8091300FD0E85 /* Embed Frameworks */,
+				4E45132C8F5CDDE80AF9A312 /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -505,11 +515,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0E34AB224D806B400FD0E85 /* Build configuration list for PBXNativeTarget "FunctionalSwiftExamplePods" */;
 			buildPhases = (
+				52D48CBCBF5E4900AD37F55B /* Timing START */,
 				204A87F8C0B6BE49C16A7D19 /* [CP] Check Pods Manifest.lock */,
 				E0E34A9D24D806B300FD0E85 /* Sources */,
 				E0E34A9E24D806B300FD0E85 /* Frameworks */,
 				E0E34A9F24D806B300FD0E85 /* Resources */,
 				115DA5B3CE6644EA5A1B461F /* [CP] Embed Pods Frameworks */,
+				94EC0E94C3FBA53B9B6D65A4 /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -531,31 +543,37 @@
 				ORGANIZATIONNAME = YooMoney;
 				TargetAttributes = {
 					244F7776E86908E572F3413A = {
+						DevelopmentTeam = 2752592HU5;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E04EB0FD1F5567B700D08B5D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2752592HU5;
 						LastSwiftMigration = 1170;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E04EB10A1F5567F600D08B5D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2752592HU5;
 						LastSwiftMigration = 1170;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E06475961FCED8DF002BF3FB = {
 						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = 2752592HU5;
 						LastSwiftMigration = 1170;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E0E34A8824D8066900FD0E85 = {
 						CreatedOnToolsVersion = 11.3.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2752592HU5;
+						ProvisioningStyle = Manual;
 					};
 					E0E34AA024D806B300FD0E85 = {
 						CreatedOnToolsVersion = 11.3.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2752592HU5;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -635,6 +653,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		071B865230D984EB365E22DF /* Timing START */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing START";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
+		};
 		115DA5B3CE6644EA5A1B461F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -652,6 +688,42 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunctionalSwiftExamplePods/Pods-FunctionalSwiftExamplePods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		12290450B600A528BEDD1CC0 /* Timing START */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing START";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
+		};
+		1B48112374B07E8D331A4B8A /* Timing END */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing END";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
 		};
 		204A87F8C0B6BE49C16A7D19 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -674,6 +746,168 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		209B90D5BDB7AE0BF17BC804 /* Timing START */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing START";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
+		};
+		4E45132C8F5CDDE80AF9A312 /* Timing END */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing END";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
+		};
+		52D48CBCBF5E4900AD37F55B /* Timing START */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing START";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
+		};
+		5FE04F85DD4FA1DF6737673B /* Timing START */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing START";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
+		};
+		94EC0E94C3FBA53B9B6D65A4 /* Timing END */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing END";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
+		};
+		C57A1C13CC1BAE40EB7BDAFA /* Timing END */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing END";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
+		};
+		C77292B72AED253110D6021D /* Timing START */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing START";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
+		};
+		C97A3CAA976FC7BE546FA68B /* Timing END */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing END";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
+		};
+		CA744D71C6D4E7B11DF2C535 /* Timing END */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing END";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/zq/fn06mpq901q5y5qhjrt17hjw0000gp/T/event.tmp\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -842,7 +1076,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -855,6 +1089,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -989,6 +1224,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -999,6 +1235,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1036,6 +1273,7 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1049,6 +1287,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1289,11 +1528,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2752592HU5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1303,7 +1541,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1314,9 +1552,9 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2752592HU5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1325,6 +1563,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -1337,10 +1576,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2752592HU5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1351,6 +1590,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -1368,9 +1608,10 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2752592HU5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -1381,6 +1622,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1393,6 +1635,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2752592HU5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1402,7 +1645,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Yoo Wild";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1416,6 +1660,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2752592HU5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1425,7 +1670,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwiftExamplePods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Yoo Wild";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
