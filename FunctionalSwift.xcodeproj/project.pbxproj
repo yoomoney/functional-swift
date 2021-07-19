@@ -410,12 +410,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 244F7FF04612350F73F67F1C /* Build configuration list for PBXNativeTarget "FunctionalSwift-iOS" */;
 			buildPhases = (
-				A952F5726B07449F74D9780D /* Timing START */,
 				244F76F82590117B37A1B649 /* Sources */,
 				244F752F9AB6097D2E1E918A /* Frameworks */,
 				244F77BCF9CB827554FCE4C8 /* Headers */,
 				244F78A0F8E029B5EB9BBDC1 /* Resources */,
-				18F699E4421ACCDA0228F1E1 /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -430,12 +428,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E04EB1031F5567B700D08B5D /* Build configuration list for PBXNativeTarget "FunctionalSwift-watchOS" */;
 			buildPhases = (
-				1773EB6D54398D53BA1A5B4F /* Timing START */,
 				E04EB0F91F5567B700D08B5D /* Sources */,
 				E04EB0FA1F5567B700D08B5D /* Frameworks */,
 				E04EB0FB1F5567B700D08B5D /* Headers */,
 				E04EB0FC1F5567B700D08B5D /* Resources */,
-				E8BDA7E61866C576B69A380C /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -450,12 +446,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E04EB1101F5567F600D08B5D /* Build configuration list for PBXNativeTarget "FunctionalSwift-macOS" */;
 			buildPhases = (
-				33BE9CE17D4665EC936BC283 /* Timing START */,
 				E04EB1061F5567F600D08B5D /* Sources */,
 				E04EB1071F5567F600D08B5D /* Frameworks */,
 				E04EB1081F5567F600D08B5D /* Headers */,
 				E04EB1091F5567F600D08B5D /* Resources */,
-				12F556EFB11FB953543EA4D9 /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -470,12 +464,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E064759F1FCED8DF002BF3FB /* Build configuration list for PBXNativeTarget "FunctionalSwiftTests" */;
 			buildPhases = (
-				7BFF5BF93D9DB1B52A6012CB /* Timing START */,
 				E06475941FCED8DF002BF3FB /* Frameworks */,
 				E06475931FCED8DF002BF3FB /* Sources */,
 				E06475951FCED8DF002BF3FB /* Resources */,
 				E06475A41FCED90B002BF3FB /* CopyFiles */,
-				7F963D61082D08AA3DEC1598 /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -493,12 +485,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0E34A9C24D8066A00FD0E85 /* Build configuration list for PBXNativeTarget "FunctionalSwiftExample" */;
 			buildPhases = (
-				37F53861ED0E46F12FF6ECA3 /* Timing START */,
 				E0E34A8524D8066900FD0E85 /* Sources */,
 				E0E34A8624D8066900FD0E85 /* Frameworks */,
 				E0E34A8724D8066900FD0E85 /* Resources */,
 				E0E34AC324D8091300FD0E85 /* Embed Frameworks */,
-				D0FB941530DF8597BBBEFABD /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -515,13 +505,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0E34AB224D806B400FD0E85 /* Build configuration list for PBXNativeTarget "FunctionalSwiftExamplePods" */;
 			buildPhases = (
-				56759599166F5E3B4009840E /* Timing START */,
 				204A87F8C0B6BE49C16A7D19 /* [CP] Check Pods Manifest.lock */,
 				E0E34A9D24D806B300FD0E85 /* Sources */,
 				E0E34A9E24D806B300FD0E85 /* Frameworks */,
 				E0E34A9F24D806B300FD0E85 /* Resources */,
 				115DA5B3CE6644EA5A1B461F /* [CP] Embed Pods Frameworks */,
-				1754F7B473348B124A07F847 /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -671,78 +659,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunctionalSwiftExamplePods/Pods-FunctionalSwiftExamplePods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		12F556EFB11FB953543EA4D9 /* Timing END */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing END";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
-		1754F7B473348B124A07F847 /* Timing END */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing END";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
-		1773EB6D54398D53BA1A5B4F /* Timing START */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing START";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
-		18F699E4421ACCDA0228F1E1 /* Timing END */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing END";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
 		204A87F8C0B6BE49C16A7D19 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -764,150 +680,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		33BE9CE17D4665EC936BC283 /* Timing START */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing START";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
-		37F53861ED0E46F12FF6ECA3 /* Timing START */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing START";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
-		56759599166F5E3B4009840E /* Timing START */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing START";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
-		7BFF5BF93D9DB1B52A6012CB /* Timing START */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing START";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
-		7F963D61082D08AA3DEC1598 /* Timing END */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing END";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
-		A952F5726B07449F74D9780D /* Timing START */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing START";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
-		D0FB941530DF8597BBBEFABD /* Timing END */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing END";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
-		};
-		E8BDA7E61866C576B69A380C /* Timing END */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Timing END";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> /var/folders/0q/j8fvr7b54k98z1qs3xz5pp3m0000gp/T/event.tmp\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
