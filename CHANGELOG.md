@@ -5,6 +5,10 @@
 ### NEXT_VERSION_DESCRIPTION_BEGIN
 ### NEXT_VERSION_DESCRIPTION_END
 
+## [1.7.1] (30-08-2021)
+
+* Зависимости в тестовом таргете переведены на xcframework; возвращена архитектура arm64 для симулятора
+
 ## [1.7.0] (30-08-2021)
 
 * Добавлен Promise
