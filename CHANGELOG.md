@@ -5,6 +5,11 @@
 ### NEXT_VERSION_DESCRIPTION_BEGIN
 ### NEXT_VERSION_DESCRIPTION_END
 
+## [1.7.0] (30-08-2021)
+
+* Добавлен Promise
+* Подняты версии систем до: iOS 9.0; macOS 10.10; watchOS 3.0
+
 ## [1.6.7] (17-07-2021)
 
 * Удалены лишние артефакты сборки
