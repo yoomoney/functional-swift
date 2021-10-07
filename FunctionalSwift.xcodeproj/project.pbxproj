@@ -555,37 +555,31 @@
 				ORGANIZATIONNAME = YooMoney;
 				TargetAttributes = {
 					244F7776E86908E572F3413A = {
-						DevelopmentTeam = 2752592HU5;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 					E04EB0FD1F5567B700D08B5D = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2752592HU5;
 						LastSwiftMigration = 1170;
 						ProvisioningStyle = Manual;
 					};
 					E04EB10A1F5567F600D08B5D = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2752592HU5;
 						LastSwiftMigration = 1170;
 						ProvisioningStyle = Manual;
 					};
 					E06475961FCED8DF002BF3FB = {
 						CreatedOnToolsVersion = 9.1;
-						DevelopmentTeam = 2752592HU5;
 						LastSwiftMigration = 1170;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					E0E34A8824D8066900FD0E85 = {
 						CreatedOnToolsVersion = 11.3.1;
-						DevelopmentTeam = 2752592HU5;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					E0E34AA024D806B300FD0E85 = {
 						CreatedOnToolsVersion = 11.3.1;
-						DevelopmentTeam = 2752592HU5;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -868,7 +862,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = AppStore;
@@ -896,7 +890,7 @@
 				PRODUCT_NAME = FunctionalSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1048,7 +1042,7 @@
 				PRODUCT_NAME = FunctionalSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1076,7 +1070,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1107,7 +1101,7 @@
 				PRODUCT_NAME = FunctionalSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1134,7 +1128,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
 				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = AppStore;
@@ -1360,10 +1354,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2752592HU5;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1376,9 +1371,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = AdHoc;
@@ -1388,9 +1383,9 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2752592HU5;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1403,9 +1398,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
-				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1416,10 +1410,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2752592HU5;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1433,9 +1427,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwift;
 				PRODUCT_NAME = FunctionalSwift;
-				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 4.2;
 			};
 			name = AdHoc;
@@ -1451,10 +1444,9 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2752592HU5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -1468,7 +1460,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1481,7 +1472,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2752592HU5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1493,8 +1483,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "Yoo Wild";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = AdHoc;
@@ -1507,7 +1496,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2752592HU5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1519,8 +1507,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.FunctionalSwiftExamplePods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "Yoo Wild";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = AdHoc;

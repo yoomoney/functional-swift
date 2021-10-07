@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'FunctionalSwift'
-  spec.version      = '1.7.1'
+  spec.version      = '1.7.3'
   spec.license = {
     :type => "MIT",
     :file => "LICENSE"
@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
     'Alexander Zalutskiy' => 'metalhead.sanya@gmail.com'
   }
   spec.summary      = 'Categories and arrows (morphisms) for swift language.'
-  spec.source       = { :git => "https://github.com/yoomoney/functional-swift.git", :tag => "1.7.1" }
+  spec.source       = { :git => "https://github.com/yoomoney/functional-swift.git", :tag => "1.7.3" }
   spec.module_name  = 'FunctionalSwift'
 
   spec.swift_version = '5.0'
@@ -20,4 +20,8 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target = '3.0'
 
   spec.source_files = 'FunctionalSwift/**/*.swift'
+
+  spec.xcconfig = {
+    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
+  }
 end

@@ -5,6 +5,14 @@
 ### NEXT_VERSION_DESCRIPTION_BEGIN
 ### NEXT_VERSION_DESCRIPTION_END
 
+## [1.7.3] (06-10-2021)
+
+* set BUILD_LIBRARY_FOR_DISTRIBUTION verbose YES
+
+## [1.7.2] (06-10-2021)
+
+* Updated for swift library evolution
+
 ## [1.7.1] (30-08-2021)
 
 * Зависимости в тестовом таргете переведены на xcframework; возвращена архитектура arm64 для симулятора
