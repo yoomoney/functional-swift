@@ -5,6 +5,10 @@
 ### NEXT_VERSION_DESCRIPTION_BEGIN
 ### NEXT_VERSION_DESCRIPTION_END
 
+## [1.8.0] (30-12-2021)
+
+* Проект адаптирован для сборки в Xcode 13
+
 ## [1.7.3] (06-10-2021)
 
 * set BUILD_LIBRARY_FOR_DISTRIBUTION verbose YES

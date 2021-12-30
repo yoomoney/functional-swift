@@ -1,5 +1,5 @@
 PODS:
-  - FunctionalSwift (1.7.3)
+  - FunctionalSwift (1.8.0)
   - SwiftLint (0.39.2)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  FunctionalSwift: 67d98dd617b186af00ea4d431c6082331d8740ad
+  FunctionalSwift: 680c92efe45abd1d0b645b5012ce757c295a2ca7
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
 
 PODFILE CHECKSUM: 5f38cf5730609ea1c86a04eda2297e1271b473eb
